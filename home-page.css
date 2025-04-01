@@ -1,6 +1,8 @@
 h1{
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
     font-size: 5em;
     color: rgb(0, 10, 56);
     text-align: center;
@@ -15,3 +17,11 @@ h1{
             box-shadow: 5px 5px 15px rgba(41, 40, 40, 0.3);
            
 }
+
+
+
+.bangers-regular {
+    font-family: "Bangers", system-ui;
+   
+  }
+  
