@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-    background-color: #444;  
+    background-color: #292f34;  
     padding: 15px 0;
     position: relative;
     z-index: 10;
@@ -25,7 +25,7 @@ nav ul {
     padding: 10px 20px;
     border: 3px solid white;
     border-radius: 25px;
-    background-color: #444;
+    background-color: #292f34;
 }
 
 nav ul li {
@@ -48,9 +48,9 @@ nav ul li a:hover {
     transition: 0.3s ease-in-out;
 }
 nav ul li.active{
-    background-color: #ff0000;
+    background-color: #a81000;
     color: white;
-    border: 3px solid red;  
+    border: 3px solid #a81000;  
     border-radius: 50px 50px 50px 50px;;     
     padding: 10px 20px;
     font-weight: bold;
