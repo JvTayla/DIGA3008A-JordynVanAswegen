@@ -19,36 +19,77 @@
 
   <body>
    <header>
+
+    
     <nav>
-      <ul role="navigation">
-        <li class="active">Home </li>
+      <div class="profile-nav">
+        <img
+          class="profile-image"
+          src="images/cartoonJordynColoured.png"
+          alt="This is a Digital Representation of Jordyn"
+        />
+        <div class="name-container">
+          <p>Jordyn</p>
+          <p>Van Aswegen</p>
+        </div>
+      </div>
+      <ul class="main-nav">
+        <li class="active">Home</li>
         <li><a href="Pages/about.html">About Me</a></li>
-        
-        <li>
-          <a href="Portfolio/index.html"><strong>Portfolio</strong> </a>
+        <li class="dropdown">
+            <input type="checkbox" id="portfolio-toggle" class="dropdown-toggle" />
+            <label for="portfolio-toggle" class="dropdown-label">Portfolio &#x2193;</label>
+            <ul class="dropdown-menu">
+                <li><a href="Portfolio/art/index.html">Art</a></li>
+                <li><a href="Portfolio/game-dev/index.html">Game Design</a></li>
+                <li><a href="Portfolio/animation/index.html">Animation</a></li>
+            </ul>
         </li>
-        <li><a href="BlogPosts/index.html"><strong>Blog Posts</strong></a></li>
-        <li><a href="Essays/index.html">Essays</a></li>
-        <li><a href="Design/index.html"><strong>Design Process</strong></a></li>
-     <li><a href="Pages/contact.html">Contact Me</a></li> 
-    </ul>
-    </nav>
+        <li class="dropdown">
+            <input type="checkbox" id="blogposts-toggle" class="dropdown-toggle" />
+            <label for="blogposts-toggle" class="dropdown-label">Blog Posts &#x2193;</label>
+            <ul class="dropdown-menu">
+                <li><a href="BlogPosts/blog-post-1.html">Blogpost 1</a></li>
+                <li><a href="BlogPosts/blog-post-2.html">Blogpost 2</a></li>
+                <li><a href="BlogPosts/blog-post-3.html">Blogpost 3</a></li>
+                <li><a href="BlogPosts/blog-post-4.html">Blogpost 4</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <input type="checkbox" id="essays-toggle" class="dropdown-toggle" />
+            <label for="essays-toggle" class="dropdown-label">Essays &#x2193;</label>
+            <ul class="dropdown-menu">
+                <li><a href="Essays/essay-1.html">Essay 1</a></li>
+                <li><a href="Essays/essay-2.html">Essay 2</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <input type="checkbox" id="design-toggle" class="dropdown-toggle" />
+            <label for="design-toggle" class="dropdown-label">Design Process &#x2193;</label>
+            <ul class="dropdown-menu">
+                <li><a href="Design/style-guide/index.html">StyleGuide</a></li>
+                <li><a href="Design/ixd-process/index.html">IxD Process</a></li>
+                <li><a href="Design/wireframes/index.html">Wireframes</a></li>
+            </ul>
+        </li> 
+</ul>
+        <div class="contact-nav">
+          <a href="Pages/contact.html" class="contact-link">Contact Me</a>
+        </div>
+      </nav>
+
+      
+   
   </header> 
   <h1> Jordyn's Portolio</h1>
-    <img
-    class="profile-image"
-      src="images/cartoonJordynColoured.png"
-      width="200"
-      height="200"
-      alt="This is a Digital Representation of Jordyn"
-    />
+   
     
     <p>Hello!</p>
     <p>
       Welcome to my Website.
       We have quite a bunch of things going on here, I'm working on getting everything up to date and my portfolio filled with all my work.
     </p>
-    <p><em>You can Navigate it all here:</em></p>
+
     
     <p>Here are all the sections to my Website:</p>
     <p>
