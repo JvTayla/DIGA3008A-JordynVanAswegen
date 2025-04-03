@@ -8,24 +8,99 @@
       name="keywords"
       content=" writing, portfolio, creative projects, interactive media, essay, freelance"
     />
+
+    <link rel=" stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
     <meta name="author" content="Jordyn Van Aswegen" />
     <link rel=" stylesheet" href="styles.css" />
     <title>Jordyn Van Aswegen Essay 2</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <div class="profile-nav">
+          <img
+            class="profile-image"
+            src="../images/cartoonJordynColoured.png"
+            alt="This is a Digital Representation of Jordyn"
+          />
+          <div class="name-container">
+            <p>Jordyn</p>
+            <p>Van Aswegen</p>
+          </div>
+        </div>
+        <ul class="main-nav">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../Pages/about.html">About Me</a></li>
+          <li class="dropdown">
+            <input
+              type="checkbox"
+              id="portfolio-toggle"
+              class="dropdown-toggle"
+            />
+            <label for="portfolio-toggle" class="dropdown-label"
+              >Portfolio &#x2193;</label
+            >
+            <ul class="dropdown-menu">
+              <li><a href="../Portfolio/art/index.html">Art</a></li>
+              <li>
+                <a href="../Portfolio/game-dev/index.html">Game Design</a>
+              </li>
+              <li><a href="../Portfolio/animation/index.html">Animation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <input
+              type="checkbox"
+              id="blogposts-toggle"
+              class="dropdown-toggle"
+            />
+            <label for="blogposts-toggle" class="dropdown-label"
+              >Blog Posts &#x2193;</label
+            >
+            <ul class="dropdown-menu">
+              <li><a href="../BlogPosts/blog-post-1.html">Blogpost 1</a></li>
+              <li><a href="../BlogPosts/blog-post-2.html">Blogpost 2</a></li>
+              <li><a href="../BlogPosts/blog-post-3.html">Blogpost 3</a></li>
+              <li><a href="../BlogPosts/blog-post-4.html">Blogpost 4</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <input type="checkbox" id="essays-toggle" class="dropdown-toggle" />
+            <label for="essays-toggle" class="dropdown-label"
+              >Essays &#x2193;</label
+            >
+            <ul class="dropdown-menu">
+              <li><a href="../Essays/essay-1.html">Essay 1</a></li>
+              <li><a href="../Essays/essay-2.html">Essay 2</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <input type="checkbox" id="design-toggle" class="dropdown-toggle" />
+            <label for="design-toggle" class="dropdown-label"
+              >Design Process &#x2193;</label
+            >
+            <ul class="dropdown-menu">
+              <li><a href="../Design/style-guide/index.html">StyleGuide</a></li>
+              <li>
+                <a href="../Design/ixd-process/index.html">IxD Process</a>
+              </li>
+              <li><a href="../Design/wireframes/index.html">Wireframes</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="contact-nav">
+          <a href="../Pages/contact.html" class="contact-link">Contact Me</a>
+        </div>
+      </nav>
+    </header>
     <h1>Essay 2 Page</h1>
 
-    <nav>
-      <ul role="navigation">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../Pages/about.html">About Me</a></li>
-        <li><a href="../Pages/contact.html">Contact Me</a></li>
-        <li><a href="../Portfolio/index.html">Portfolio</a></li>
-        <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
-        <li><a href="../Essays/index.html">Essays</a></li>
-        <li><a href="../Design/index.html">Web Design Process</a></li>
-      </ul>
-    </nav>
     <p>
       We havent done essays yet ,but heres the basic format so we can go bakc
       and forth between the two essasys if needed
