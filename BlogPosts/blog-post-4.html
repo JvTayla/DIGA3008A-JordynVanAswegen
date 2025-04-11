@@ -12,24 +12,103 @@
       content=" web development, portfolio, creative projects, interactive media, coding, freelance"
     />
     <meta name="author" content="Jordyn Van Aswegen" />
-    <link rel=" stylesheet" href="styles.css">
+    
     <link rel=" stylesheet" href="../home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    /><link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
     <title>Blog Post 4 - Week 4</title>
   </head>
+  <header>
+    <nav>
+      <div class="profile-nav">
+        <img
+          class="profile-image"
+          src="../../images/cartoonJordynColoured.png"
+          alt="This is a Digital Representation of Jordyn"
+        />
+        <div class="name-container">
+          <p>Jordyn</p>
+          <p>Van Aswegen</p>
+        </div>
+      </div>
+      <ul class="main-nav">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../Pages/about.html">About Me</a></li>
+        <li class="dropdown">
+          <input
+            type="checkbox"
+            id="portfolio-toggle"
+            class="dropdown-toggle"
+          />
+          <label for="portfolio-toggle" class="active" class="dropdown-label"
+            >Portfolio &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../Portfolio/art/index.html">Art</a></li>
+            <li>
+              <a href="../../Portfolio/game-dev/index.html">Game Design</a>
+            </li>
+            <li>
+              <a href="../../Portfolio/animation/index.html">Animation</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input
+            type="checkbox"
+            id="blogposts-toggle"
+            class="dropdown-toggle"
+          />
+          <label for="blogposts-toggle" class="dropdown-label"
+            >Blog Posts &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../BlogPosts/blog-post-1.html">Blogpost 1</a></li>
+            <li><a href="../../BlogPosts/blog-post-2.html">Blogpost 2</a></li>
+            <li><a href="../../BlogPosts/blog-post-3.html">Blogpost 3</a></li>
+            <li class="activeback"><a href="../../BlogPosts/blog-post-4.html">Blogpost 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="essays-toggle" class="dropdown-toggle" />
+          <label for="essays-toggle" class="dropdown-label"
+            >Essays &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../Essays/essay-1.html">Essay 1</a></li>
+            <li><a href="../../Essays/essay-2.html">Essay 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="design-toggle" class="dropdown-toggle" />
+          <label for="design-toggle" class="dropdown-label"
+            >Design Process &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a href="../../Design/style-guide/index.html">StyleGuide</a>
+            </li>
+            <li>
+              <a href="../../Design/ixd-process/index.html">IxD Process</a>
+            </li>
+            <li>
+              <a href="../../Design/wireframes/index.html">Wireframes</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="contact-nav">
+        <a href="../../Pages/contact.html" class="contact-link">Contact Me</a>
+      </div>
+    </nav>
+  </header>
   <body>
-    <header>
-      <nav>
-        <ul role="navigation">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Pages/about.html">About Me</a></li>
-          <li><a href="../Pages/contact.html">Contact Me</a></li>
-          <li><a href="../Portfolio/index.html">Portfolio</a></li>
-          <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
-          <li><a href="../Essays/index.html">Essays</a></li>
-          <li><a href="../Design/index.html">Web Design Process</a></li>
-        </ul>
-      </nav>
-    </header>
+   
     <article>
       <h1>Week 4 - Blog Post 4: IxD Process and Design updates</h1>
       <h3>By Jordyn Van Aswegen</h3>
@@ -181,79 +260,80 @@ Inspiration : <a href="https://www.alexfisherdesign.ca"
     <li><a href="../BlogPosts/blog-post-2.html">Blog Post 2</a></li>
     <li><a href="../BlogPosts/blog-post-3.html">Blog Post 3</a></li>
 
-    <footer>
-      <div class="footer-container">
-          <div class="footer-profile">
-              <img class="footer-image" src="images/cartoonJordynColoured.png" alt="Digital Representation of Jordyn">
-              <div class="footer-name">
-                  <p>Jordyn</p>
-                  <p>Van Aswegen</p>
-              </div>
-          </div>
-  
-          <div class="footer-links">
-
-
-            <div class="footer-section">
-              
-              <h3>
-                <li><a href="index.html">Home</a></li> 
-              </h3>
-            </div>
-            <div class="footer-section">
-
-              <h3>
-                <li><a href="Pages/about.html">About Me</a></li>    
-              </h3>
-            </div>
-              <div class="footer-section">
-                  <h3>Portfolio</h3>
-                  <ul>
-                      <li><a href="Portfolio/art/index.html">Art</a></li>
-                      <li><a href="Portfolio/game-dev/index.html">Game Design</a></li>
-                      <li><a href="Portfolio/animation/index.html">Animation</a></li>
-                  </ul>
-              </div>
-  
-              <div class="footer-section">
-                  <h3>Interactive Media Work</h3>
-                  <ul>
-                      <li><a href="Essays/index.html">Essays</a></li>
-                      <li><a href="BlogPosts/index.html">Blog Posts</a></li>
-                      <li><a href="Design/index.html">Web Development Design Process</a></li>
-                  </ul>
-              </div>
-
-              <div class="footer-section">
-                <h3>
-                <li><a href="Pages/contact.html">Contact Me</a></li> 
-              </h3>
-              <div class="footer-social">
-                <div class="social-row">
-                    <a href="https://instagram.com/jetayla" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-                    <a href="https://linkedin.com/in/jordyntaylavanaswegen/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
-                    <a href="https://www.artstation.com/jetayla" target="_blank"><i class="fi fi-brands-artstation"></i></a>
-                </div>
-                <div class="social-row">
-                  <a href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A" target="_blank">
-                    <i class="fi fi-brands-youtube"></i>
-                </a>
-                <a href="mailto:graphicdesignsbyjordyn@email.com" target="_blank">
-                    <img src="images/gmail-white.png" alt="Gmail" class="social-icon normal"> 
-                    <img src="images/gmail-white-hover.png" alt="Email Hover" class="social-icon hover">
-                </a>
-                <a href="https://jetayla.itch.io" target="_blank">
-                    <img src="images/itchio-logo-textless-white.png" alt="Itch.io" class="social-icon normal">
-                    <img src="images/itchio-logo-textless-white-hover.png" alt="Itch Hover" class="social-icon hover">
-                </a>
-               </div>
-              </div>
-              </div>
-              
-            </div>
-
-          </div>
-      </div>
-  </footer>
+    
   </body>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-profile">
+            <img class="footer-image" src="../images/cartoonJordynColoured.png" alt="Digital Representation of Jordyn">
+            <div class="footer-name">
+                <p>Jordyn</p>
+                <p>Van Aswegen</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+
+
+          <div class="footer-section">
+            
+            <h3>
+              <li><a href="../index.html">Home</a></li> 
+            </h3>
+          </div>
+          <div class="footer-section">
+
+            <h3>
+              <li><a href="../Pages/about.html">About Me</a></li>    
+            </h3>
+          </div>
+            <div class="footer-section">
+                <h3>Portfolio</h3>
+                <ul>
+                    <li><a href="../Portfolio/art/index.html">Art</a></li>
+                    <li><a href="../Portfolio/game-dev/index.html">Game Design</a></li>
+                    <li><a href="../Portfolio/animation/index.html">Animation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Interactive Media Work</h3>
+                <ul>
+                    <li><a href="../Essays/index.html">Essays</a></li>
+                    <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
+                    <li><a href="../Design/index.html">Web Development Design Process</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+              <h3>
+              <li><a href="../Pages/contact.html">Contact Me</a></li> 
+            </h3>
+            <div class="footer-social">
+              <div class="social-row">
+                  <a href="https://instagram.com/jetayla" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+                  <a href="https://linkedin.com/in/jordyntaylavanaswegen/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                  <a href="https://www.artstation.com/jetayla" target="_blank"><i class="fi fi-brands-artstation"></i></a>
+              </div>
+              <div class="social-row">
+                <a href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A" target="_blank">
+                  <i class="fi fi-brands-youtube"></i>
+              </a>
+              <a href="mailto:graphicdesignsbyjordyn@email.com" target="_blank">
+                  <img src="../images/gmail-white.png" alt="Gmail" class="social-icon normal"> 
+                  <img src="../images/gmail-white-hover.png" alt="Email Hover" class="social-icon hover">
+              </a>
+              <a href="https://jetayla.itch.io" target="_blank">
+                  <img src="../images/itchio-logo-textless-white.png" alt="Itch.io" class="social-icon normal">
+                  <img src="../images/itchio-logo-textless-white-hover.png" alt="Itch Hover" class="social-icon hover">
+              </a>
+             </div>
+            </div>
+            </div>
+            
+          </div>
+
+        </div>
+    </div>
+</footer>
 </html>

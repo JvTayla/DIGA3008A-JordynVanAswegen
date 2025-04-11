@@ -12,24 +12,103 @@
       content=" web development, portfolio, creative projects, interactive media, coding, freelance"
     />
     <meta name="author" content="Jordyn Van Aswegen" />
-    <link rel=" stylesheet" href="styles.css">
+    
     <link rel=" stylesheet" href="../home-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    /><link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
     <title>Blog Post 3 - Week 3</title>
   </head>
+  <header>
+    <nav>
+      <div class="profile-nav">
+        <img
+          class="profile-image"
+          src="../../images/cartoonJordynColoured.png"
+          alt="This is a Digital Representation of Jordyn"
+        />
+        <div class="name-container">
+          <p>Jordyn</p>
+          <p>Van Aswegen</p>
+        </div>
+      </div>
+      <ul class="main-nav">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../../Pages/about.html">About Me</a></li>
+        <li class="dropdown">
+          <input
+            type="checkbox"
+            id="portfolio-toggle"
+            class="dropdown-toggle"
+          />
+          <label for="portfolio-toggle" class="active" class="dropdown-label"
+            >Portfolio &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../Portfolio/art/index.html">Art</a></li>
+            <li>
+              <a href="../../Portfolio/game-dev/index.html">Game Design</a>
+            </li>
+            <li>
+              <a href="../../Portfolio/animation/index.html">Animation</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input
+            type="checkbox"
+            id="blogposts-toggle"
+            class="dropdown-toggle"
+          />
+          <label for="blogposts-toggle" class="dropdown-label"
+            >Blog Posts &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../BlogPosts/blog-post-1.html">Blogpost 1</a></li>
+            <li><a href="../../BlogPosts/blog-post-2.html">Blogpost 2</a></li>
+            <li class="activeback"><a href="../../BlogPosts/blog-post-3.html">Blogpost 3</a></li>
+            <li><a href="../../BlogPosts/blog-post-4.html">Blogpost 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="essays-toggle" class="dropdown-toggle" />
+          <label for="essays-toggle" class="dropdown-label"
+            >Essays &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li><a href="../../Essays/essay-1.html">Essay 1</a></li>
+            <li><a href="../../Essays/essay-2.html">Essay 2</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <input type="checkbox" id="design-toggle" class="dropdown-toggle" />
+          <label for="design-toggle" class="dropdown-label"
+            >Design Process &#x2193;</label
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a href="../../Design/style-guide/index.html">StyleGuide</a>
+            </li>
+            <li>
+              <a href="../../Design/ixd-process/index.html">IxD Process</a>
+            </li>
+            <li>
+              <a href="../../Design/wireframes/index.html">Wireframes</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="contact-nav">
+        <a href="../../Pages/contact.html" class="contact-link">Contact Me</a>
+      </div>
+    </nav>
+  </header>
   <body>
-    <header>
-      <nav>
-        <ul role="navigation">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Pages/about.html">About Me</a></li>
-          <li><a href="../Pages/contact.html">Contact Me</a></li>
-          <li><a href="../Portfolio/index.html">Portfolio</a></li>
-          <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
-          <li><a href="../Essays/index.html">Essays</a></li>
-          <li><a href="../Design/index.html">Web Design Process</a></li>
-        </ul>
-      </nav>
-    </header>
+    
     <article>
       <h1>
         Week 3 - Blog Post 3: Interaction Design for the web and Semantic Markup
@@ -44,29 +123,30 @@
     </p>
     <p>For my website design, I've focused on:
     
-    <ul><h4>Identifying my target audience:
-    </h4>
-    My target Audience is employers and potential clients for my artwork, I’d also like to use this website as a basic portfolio to keep my updated work on
+    <ul>
+      <h4>Identifying my target audience:
+       </h4>
+       My target Audience is employers and potential clients for my artwork, I’d also like to use this website as a basic portfolio to keep my updated work on
     
-    <h4>Understanding my target audiences’ goals:
-    </h4>
-   <p> So I believe that potential employers would like to see my about me section, my contact details and my work. To highlight this, I've made my portfolio one of my Navigation bars so it's easily accessible as well as my Contact me, and bout sections being easy to access. I've also decided to use the background as a way to show my recent environmental art designs that I’m working on, and to add to that comic book artistic feel.  Being able to easily explore my portfolio, learn about my artistic process, and contact me for inquiries.
+       <h4>Understanding my target audiences’ goals:
+       </h4>
+       <p> So I believe that potential employers would like to see my about me section, my contact details and my work. To highlight this, I've made my portfolio one of my Navigation bars so it's easily accessible as well as my Contact me, and bout sections being easy to access. I've also decided to use the background as a way to show my recent environmental art designs that I’m working on, and to add to that comic book artistic feel.  Being able to easily explore my portfolio, learn about my artistic process, and contact me for inquiries.
+       </p>
+       <h4>Addressing my target audience's needs:
+       </h4>
+       <p>Here I asked myself, what would an employer want to see on my website, and what would they need to do this? I concluded that they would need me to Provide clear navigation, showcasing my work effectively, and offering easy contact options, they would also need access to my other work , which they can navigate easier with drop down menus and pages hyperlinked to other pages , so on my 2D Animation they can directly click to my 3D animation page. Or on my Traditional art page they also have the option to find subcategories, such as Line art, Acrylic paintings, Gouache paintings and stuff :0
+       </p>
+       <h3>Site Mapping</h3>
+       <img
+        src="../BlogPosts/blog-graphics/Site Mapping.png"
+        alt="Site Mapping of my Websites layout and structure"
+        height ="300"/>
+        </ul> 
     </p>
-    <h4>Addressing my target audience's needs:
-    </h4>
-    <p>Here I asked myself, what would an employer want to see on my website, and what would they need to do this? I concluded that they would need me to Provide clear navigation, showcasing my work effectively, and offering easy contact options, they would also need access to my other work , which they can navigate easier with drop down menus and pages hyperlinked to other pages , so on my 2D Animation they can directly click to my 3D animation page. Or on my Traditional art page they also have the option to find subcategories, such as Line art, Acrylic paintings, Gouache paintings and stuff :0
-    </p>
-    <h3>Site Mapping</h3>
-<img
-src="../BlogPosts/blog-graphics/Site Mapping.png"
-alt="Site Mapping of my Websites layout and structure"
-height ="300"
-/>
-</ul></p>
     </article>
     
     
-     
+  
     <article>
     <h3>Content</h3>
     
@@ -147,9 +227,9 @@ height ="300"
     <li>About Me → /Pages/about.html</li>
     <li>Contact →/Pages/contact.html</li>
   </ul>
-    </article>
     
-   <p> Semantic markup refers to the use of HTML elements that convey the meaning and structure of content, rather than focusing on how it looks. It helps both browsers and users (including assistive technologies) understand the purpose of each element on a webpage. For example, using <header> for the top section, <nav> for navigation links, and <article> for main content provides clear context about the role of each section.
+    
+   <p> Semantic markup refers to the use of HTML elements that convey the meaning and structure of content, rather than focusing on how it looks. It helps both browsers and users (including assistive technologies) understand the purpose of each element on a webpage. For example, using header for the top section, nav for navigation links, and article for main content provides clear context about the role of each section.
     </p>
     <p>In designing my website, I plan to leverage the header elements to create a seamless navigation experience. The concept involves using these semantic elements to house primary and secondary navigation menus, respectively.
     </p>
@@ -172,93 +252,97 @@ height ="300"
     <p>The main problem is that GitHub Pages expects the html files to be in the root directory, but my project structure relies on subfolders for organization. This has caused 404 errors when navigating between pages.
     </p>
     <p>Despite these challenges, I’m confident that I’ll resolve them soon, allowing my site to function as intended on GitHub Pages. These technical adjustments are a valuable learning experience, reinforcing my understanding of hosting and deployment workflow
-</p>
-<p>I also reworked my wireframe this week to better enhance my design goals and my navigation approach :
-</p>
+    </p>
+    <p>I also reworked my wireframe this week to better enhance my design goals and my navigation approach :
+    </p>
 
-You can checkout the full wireframes here  : <li><a href= ../Design/wireframes/index.html > Wireframes</a></li>
-
-
+      You can checkout the full wireframes here  : <li><a href= ../Design/wireframes/index.html > Wireframes</a></li>
 
 
-    <h4>Other Blogs</h4>
+
+
+      <h4>Other Blogs</h4>
     <li><a href="../BlogPosts/blog-post-1.html">Blog Post 1</a></li>
     <li><a href="../BlogPosts/blog-post-2.html">Blog Post 2</a></li>
     <li><a href="../BlogPosts/blog-post-4.html">Blog Post 4</a></li>
 
-    <footer>
-      <div class="footer-container">
-          <div class="footer-profile">
-              <img class="footer-image" src="images/cartoonJordynColoured.png" alt="Digital Representation of Jordyn">
-              <div class="footer-name">
-                  <p>Jordyn</p>
-                  <p>Van Aswegen</p>
-              </div>
-          </div>
-  
-          <div class="footer-links">
-
-
-            <div class="footer-section">
-              
-              <h3>
-                <li><a href="index.html">Home</a></li> 
-              </h3>
-            </div>
-            <div class="footer-section">
-
-              <h3>
-                <li><a href="Pages/about.html">About Me</a></li>    
-              </h3>
-            </div>
-              <div class="footer-section">
-                  <h3>Portfolio</h3>
-                  <ul>
-                      <li><a href="Portfolio/art/index.html">Art</a></li>
-                      <li><a href="Portfolio/game-dev/index.html">Game Design</a></li>
-                      <li><a href="Portfolio/animation/index.html">Animation</a></li>
-                  </ul>
-              </div>
-  
-              <div class="footer-section">
-                  <h3>Interactive Media Work</h3>
-                  <ul>
-                      <li><a href="Essays/index.html">Essays</a></li>
-                      <li><a href="BlogPosts/index.html">Blog Posts</a></li>
-                      <li><a href="Design/index.html">Web Development Design Process</a></li>
-                  </ul>
-              </div>
-
-              <div class="footer-section">
-                <h3>
-                <li><a href="Pages/contact.html">Contact Me</a></li> 
-              </h3>
-              <div class="footer-social">
-                <div class="social-row">
-                    <a href="https://instagram.com/jetayla" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-                    <a href="https://linkedin.com/in/jordyntaylavanaswegen/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
-                    <a href="https://www.artstation.com/jetayla" target="_blank"><i class="fi fi-brands-artstation"></i></a>
-                </div>
-                <div class="social-row">
-                  <a href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A" target="_blank">
-                    <i class="fi fi-brands-youtube"></i>
-                </a>
-                <a href="mailto:graphicdesignsbyjordyn@email.com" target="_blank">
-                    <img src="images/gmail-white.png" alt="Gmail" class="social-icon normal"> 
-                    <img src="images/gmail-white-hover.png" alt="Email Hover" class="social-icon hover">
-                </a>
-                <a href="https://jetayla.itch.io" target="_blank">
-                    <img src="images/itchio-logo-textless-white.png" alt="Itch.io" class="social-icon normal">
-                    <img src="images/itchio-logo-textless-white-hover.png" alt="Itch Hover" class="social-icon hover">
-                </a>
-               </div>
-              </div>
-              </div>
-              
-            </div>
-
-          </div>
-      </div>
-  </footer>
+    
   </body>
+  
+  
+  <footer>
+        <div class="footer-container">
+           <div class="footer-profile">
+              <img class="footer-image" src="../images/cartoonJordynColoured.png" alt="Digital Representation of Jordyn">
+              <div class="footer-name">
+                <p>Jordyn</p>
+                <p>Van Aswegen</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+
+
+          <div class="footer-section">
+            
+            <h3>
+              <li><a href="../index.html">Home</a></li> 
+            </h3>
+          </div>
+          <div class="footer-section">
+
+            <h3>
+              <li><a href="../Pages/about.html">About Me</a></li>    
+            </h3>
+          </div>
+            <div class="footer-section">
+                <h3>Portfolio</h3>
+                <ul>
+                    <li><a href="../Portfolio/art/index.html">Art</a></li>
+                    <li><a href="../Portfolio/game-dev/index.html">Game Design</a></li>
+                    <li><a href="../Portfolio/animation/index.html">Animation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Interactive Media Work</h3>
+                <ul>
+                    <li><a href="../Essays/index.html">Essays</a></li>
+                    <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
+                    <li><a href="../Design/index.html">Web Development Design Process</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+              <h3>
+              <li><a href="../Pages/contact.html">Contact Me</a></li> 
+            </h3>
+            <div class="footer-social">
+              <div class="social-row">
+                  <a href="https://instagram.com/jetayla" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+                  <a href="https://linkedin.com/in/jordyntaylavanaswegen/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+                  <a href="https://www.artstation.com/jetayla" target="_blank"><i class="fi fi-brands-artstation"></i></a>
+              </div>
+              <div class="social-row">
+                <a href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A" target="_blank">
+                  <i class="fi fi-brands-youtube"></i>
+              </a>
+              <a href="mailto:graphicdesignsbyjordyn@email.com" target="_blank">
+                  <img src="../images/gmail-white.png" alt="Gmail" class="social-icon normal"> 
+                  <img src="../images/gmail-white-hover.png" alt="Email Hover" class="social-icon hover">
+              </a>
+              <a href="https://jetayla.itch.io" target="_blank">
+                  <img src="../images/itchio-logo-textless-white.png" alt="Itch.io" class="social-icon normal">
+                  <img src="../images/itchio-logo-textless-white-hover.png" alt="Itch Hover" class="social-icon hover">
+              </a>
+             </div>
+            </div>
+            </div>
+            
+          </div>
+
+        </div>
+    </div>
+</footer>
+
 </html>
