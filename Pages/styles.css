@@ -22,3 +22,13 @@ nav .dropdown-menu li.activeback
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
+.contact-nav  a {
+    background-color: #a81000;
+    color: white;
+    border: 3px solid #a81000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  
