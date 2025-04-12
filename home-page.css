@@ -9,8 +9,6 @@ body {
     background-color: #f4f4f4;
 }
 
-
-
 nav {
     background-color: #292f34;
     padding:  15px 20px ;
@@ -20,7 +18,6 @@ nav {
     justify-content: space-between;
     border-bottom: 3px solid white;
 }
-
 
 .profile-nav {
     display: flex;
