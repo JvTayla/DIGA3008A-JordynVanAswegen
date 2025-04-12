@@ -22,7 +22,7 @@ nav .dropdown-menu li.activeback
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
-.contact-nav  a {
+.contact-nav  a.active {
     background-color: #a81000;
     color: white;
     border: 3px solid #a81000;
