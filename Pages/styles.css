@@ -12,6 +12,7 @@ nav ul li.active {
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
+
 nav .dropdown-menu li.activeback
 {
     background-color: #a81000;
@@ -32,3 +33,120 @@ nav .dropdown-menu li.activeback
     transition: 0.3s ease-in-out;
   }
   
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:100%;
+  }
+  .container {
+    display: flex;
+ 
+  
+    height: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    justify-content: middle;
+   
+    overflow: hidden;
+  }
+
+  .aboutme-nav {
+    flex: 1;
+    background-color: #a11717;
+    max-width: 500px;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jordyn-image {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  
+.education-section,
+.interests-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.interests-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.interests-section li {
+  margin: 6px 0;
+}
+
+/* Main content */
+.aboutme-main {
+  flex: 2;
+  background-color: #ffcc35;
+  max-width: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutme-main h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutme-main h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.aboutme-main h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutme-main article {
+  margin: 1.5rem 0;
+  line-height: 1.6;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
