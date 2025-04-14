@@ -143,7 +143,7 @@ nav .dropdown-menu li.activeback
 }
 .aboutme-main {
   flex: 2;
-  background-color: #ffcc35;
+  background-color: #ffcc00;
   
   border-color: white;
   max-width: 800;
@@ -265,9 +265,4 @@ a:hover .social-icon.normal {
 
 a:hover .social-icon.hover {
   display: inline-block;
-}
-.space {
-  margin-top: 2rem;
-  color: transparent; /* hides the dot */
-  user-select: none;  /* optional: prevents selection */
 }

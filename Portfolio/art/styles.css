@@ -118,3 +118,34 @@ body {
     margin-bottom: 15px;
     color: #333;
   } 
+  .container {
+  background-color: #200092;
+  color: rgb(255, 255, 255);
+  }
+  .skill li {
+    background-color:#ffcc00; 
+    color: black;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 50px; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .portfolio-section {
+    
+    background-color: #a81000;
+    color: #ffffff;
+    font-size: .45em;
+    font-weight: bold;
+  
+  }
+  .portfolio-section h2{
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 0%;
+    padding: 0%;
+  }
+
+  
