@@ -1,0 +1,23 @@
+.skill{
+    padding-top: 10px;
+  }
+  .skill ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; 
+    flex-wrap: wrap; 
+  }
+  .skill li {
+    background-color: #a11717; 
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 50px; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+  .skill li.hover{
+    transform: scale(1.5);
+  }
