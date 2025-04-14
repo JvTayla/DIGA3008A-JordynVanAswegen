@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav .dropdown-menu li.active  
+{
+    background-color: #a81000;
+    color: white;
+    border: 1px solid #a81000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+nav .dropdown-menu li.activeback
+{
+    background-color: #a81000;
+    color: white;
+    border: 1px solid #a81000;
+    border-radius: 50px;
+    padding: 1px 2px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.container {
+  display: flex;
+  width: 80%;
+   height: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+flex-direction: column; 
+
+width: 80%;
+margin: 0 auto;
+padding: 2rem;
+border-radius: 30px;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+background-color: #a81000;
+color: rgb(255, 255, 255);
+}
+.container p{
+  font-size: 1.5rem;
+  text-align: center;
+margin-bottom: 0.5rem;
+}
+.text-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.skill{
+  justify-content: center;
+  padding-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem; 
+  flex-wrap: wrap; 
+  color: #ffcc00;
+}
+.skill ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem; 
+  flex-wrap: wrap; 
+}
+.skill li {
+  background-color:#200092; 
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 50px; 
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.skill li.hover{
+  transform: scale(1.5);
+}
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+
+.portfolio-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcc00;
+  color: #ffffff;
+  font-size: 1.25em;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.portfolio-section h2{
+  color: #000000;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 0%;
+  padding: 0%;
+}
+
+
+.portfolio-section img {
+  padding-top: 20px;
+  text-align: center;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-section:hover {
+  transform: scale(1.05);
+}
+
+h3, h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
