@@ -43,6 +43,15 @@ nav .dropdown-menu li.activeback
   background-color: #ffcc00;
   color: rgb(0, 0, 0);
   }
+  .container h3{
+    text-transform: uppercase;
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5px;
+  }
   .container p{
     font-size: 1.5rem;
     text-align: center;

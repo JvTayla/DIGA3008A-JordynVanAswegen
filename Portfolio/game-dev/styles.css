@@ -173,7 +173,7 @@ h4 {
   border-color: #ffcc00;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
-.container h3{
+h3.title {
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
   font-weight: 100;
@@ -182,7 +182,15 @@ h4 {
   text-align: left;
   margin-top: 5px;
 }
-
+.container h3{
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 5px;
+}
 
 .project-columns {
   display: flex;
@@ -237,8 +245,17 @@ box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 background-color: #a81000;
 color: rgb(255, 255, 255);
 }
-.project-container h3{
+.container h3{
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
   text-align: center;
+  margin-top: 5px;
+}
+.project-container h3{
+  text-align: left;
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
   font-weight: 100;
