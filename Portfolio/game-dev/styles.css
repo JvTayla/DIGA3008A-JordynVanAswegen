@@ -144,3 +144,106 @@ h3, h4 {
 h4 {
   font-size: 1.25rem;
 }
+
+
+.project-block {
+  margin-bottom: 3rem;
+}
+
+.project-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-text {
+  flex: 1 1 55%;
+  text-align: left;
+}
+.project-text p{
+  text-align: left;
+}
+
+.project-image {
+  flex: 1 1 30%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border-color: #ffcc00;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.container h3{
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+.project-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-block {
+  flex: 1 1 45%;
+  align-content: center;
+}
+
+.project-block h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 2em;
+  max-width: 80%;
+}
+.project-block p{
+  max-width: 80%;
+}
+
+.project-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  
+}
+.project-container {
+  display: flex;
+  width: 80%;
+   height: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+flex-direction: column; 
+
+width: 80%;
+margin: 0 auto;
+padding: 2rem;
+border-radius: 30px;
+box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+background-color: #a81000;
+color: rgb(255, 255, 255);
+}
+.project-container h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 100;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  
+  margin-top: 5px;
+}
