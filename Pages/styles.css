@@ -61,13 +61,11 @@ nav .dropdown-menu li.activeback
     gap: 1.5rem; 
     flex-wrap: wrap; 
   }
-  
   .skills li {
     background-color: #a11717; 
     color: white;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
- 
     border-radius: 50px; 
     font-weight: bold;
     text-align: center;
