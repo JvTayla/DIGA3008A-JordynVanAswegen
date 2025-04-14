@@ -35,7 +35,7 @@ nav .dropdown-menu li.activeback
   
   body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #f2f2f2;
+   
     margin: 0;
     padding: 0;
     display: flex;
@@ -52,13 +52,10 @@ nav .dropdown-menu li.activeback
   }
   .container {
     display: flex;
- 
-  
-    height: 80%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+     height: 80%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     border-radius: 30px;
     justify-content: middle;
-   
     overflow: hidden;
   }
 
@@ -67,7 +64,8 @@ nav .dropdown-menu li.activeback
     background-color: #a11717;
     max-width: 500px;
     color: white;
-    padding: 2rem;
+    padding: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,78 +73,171 @@ nav .dropdown-menu li.activeback
   }
   
   .jordyn-image {
-    width: 150px;
-    height: 200px;
+    width: 350px;
+    height: 450px;
     object-fit: cover;
     border: 5px solid white;
     border-radius: 12px;
     margin-bottom: 1rem;
   }
-  
-  
+   
 .education-section,
 .interests-section {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  
+}
+.education-section h2{
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+.education-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.education-section li {
+  margin: 6px 0;
+}
+.interests-section h2{
+  text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 .interests-section ul {
   list-style: none;
   padding: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .interests-section li {
   margin: 6px 0;
 }
-
-/* Main content */
 .aboutme-main {
   flex: 2;
   background-color: #ffcc35;
-  max-width: 1000;
+  max-width: 800;
   padding: 2rem;
+  border-radius: 20px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
+}
+.aboutme-main h2 {
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  text-align: left;
+}
+h3 a {
+  color: black; 
+  text-decoration: none; 
 }
 
-.aboutme-main h1 {
+h3 a:hover {
+  color: white; 
+}
+.aboutme-main h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.aboutme-main h4 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-}
-
-.aboutme-main h2 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.aboutme-main h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .aboutme-main article {
-  margin: 1.5rem 0;
-  line-height: 1.6;
+    
+    text-align: left;       
+    line-height: 1;        
+         
+
+}
+.aboutme-main article p {
+  font-size: 2rem; 
+  margin-bottom: 15px;     
+  padding: 20px;   
+}
+
+.greeting {
+  font-weight: bold;
+  
 }
 
 .contact-links {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
   padding: 0;
+  margin-top: 5rem;
 }
 
 .contact-links li {
-  margin-bottom: 0.5rem;
+  color:white;
 }
 
 .contact-links a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
+  transform: scale(2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: black;
+}
+.norm-media{
+  transform: scale(2);
+
+}
+.contact-links a:hover {
+  
+  color: white;
 }
 
-.contact-links a:hover {
-  text-decoration: underline;
+.social-media {
+  height: 28px;
+  width: 28px;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.social-media.hover {
+  display: none;
+}
+
+a:hover .normal {
+  display: none;
+}
+
+a:hover .hover {
+  display: inline;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.social-icon.hover {
+  display: none;
+}
+
+a:hover .social-icon.normal {
+  display: none;
+}
+
+a:hover .social-icon.hover {
+  display: inline-block;
+}
+.space {
+  margin-top: 2rem;
+  color: transparent; /* hides the dot */
+  user-select: none;  /* optional: prevents selection */
 }
