@@ -167,3 +167,7 @@ h4 {
 .next-btn:hover {
   background-color: #fddb53;
 }
+.project-image {
+  display: block;
+  margin: 0 auto;
+}
