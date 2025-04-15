@@ -17,13 +17,17 @@
     />
     <meta name="author" content="Jordyn Van Aswegen" />
     <link rel=" stylesheet" href="styles.css" />
-    <link rel=" stylesheet" href="../home-page.css">
+    <link rel=" stylesheet" href="../home-page.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
       rel="stylesheet"
-    /><link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
     <title>Contact Me</title>
   </head>
   <body>
@@ -106,136 +110,222 @@
         </div>
       </nav>
     </header>
-    <h1>Contact Me</h1>
-    <article>
-      <p>
-        I’d love to connect! Whether you're interested in commissions, baking
-        projects, or other creative collaborations, feel free to reach out. I'm
-        always open to new opportunities and ideas. You can contact me directly
-        via email, or connect with me on LinkedIn to stay in touch and explore
-        potential projects. Also, check out my work on Itch.io to play my latest
-        games, follow my Art Instagram for creative updates, or explore my
-        Baking Instagram for delicious confections. Let's create something
-        amazing together!
-      </p>
-    </article>
-    <p>
-      <em>Lets get in touch :</em>
-    </p>
-    <p>
-      <li>
-        <a target="_blank" href="mailto:vanaswegen.jordy@gmail.com">
-          Email Me</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/jordyn-van-aswegen-21388b219/"
-        >
-          LinkedIn Profile</a
-        >
-      </li>
-      <li>
-        <a target="_blank" href="https://Jetayla.itch.io"> Itch.io Profile</a>
-      </li>
+    <div class="contact-container">
+      <h1>Contact Me</h1>
 
-      <li>
-        <a target="_blank" href="https://www.instagram.com/jetayla/">
-          Art Instagram Page</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/tays_gourmet_treats/"
-        >
-          Bakery Instagram Page</a
-        >
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://linktr.ee/tays.gourmettreats?utm_source=linktree_profile_share&ltsid=d22f75bc-51c1-44d9-9ca0-9e2843be78f1"
-        >
-          Bakery Linktree</a
-        >
-      </li>
-    </p>
+      <div class="contact-columns">
+        <div class="left-column">
+          <div class="space"></div>
+          <div class="space"></div>
+          <section>
+            <p>
+              <div class="space"></div>
+              I’d love to connect! Whether you're interested in commissions,
+              baking projects, or other creative collaborations, feel free to
+              reach out. I'm always open to new opportunities and ideas.
+              <div class="space"></div> 
+              You can contact me directly via email, or connect with me on LinkedIn to
+              stay in touch and explore potential projects. Also, check out my
+              work on Itch.io to play my latest games, follow my Art Instagram
+              for creative updates, or explore my Baking Instagram for delicious
+              confections. 
+              <div class="space"></div>
+              Let's create something amazing together!
+            </p>
+            
+          </section>
+        </div>
+
+        <div class="right-column">
+          <form class="contact-form" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button disabled>This is just for vibes</button>
+          </form>
+        </div>
+      </div>
+      <ul class="c-contact-links">
+        <li>
+          <a
+            class="norm-media"
+            href="https://www.linkedin.com/in/jordyn-van-aswegen-21388b219/"
+            target="_blank"
+          >
+            <i class="fi fi-brands-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="norm-media"
+            href="https://www.artstation.com/jetayla"
+            target="_blank"
+          >
+            <i class="fi fi-brands-artstation"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="norm-media"
+            href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A"
+            target="_blank"
+          >
+            <i class="fi fi-brands-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            class="norm-media"
+            href="https://www.instagram.com/jetayla/"
+            target="_blank"
+          >
+            <i class="fi fi-brands-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://Jetayla.itch.io" target="_blank">
+            <img
+              src="../main-image/itchio-logo-textless-white.png"
+              alt="Itch.io"
+              class="social-media normal"
+            />
+            <img
+              src="../main-image/itchio-logo-textless-white-hover-black.png"
+              alt="Itch Hover"
+              class="social-media hover"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vanaswegen.jordy@gmail.com" target="_blank">
+            <img
+              src="../main-image/gmail-white.png"
+              alt="Gmail"
+              class="social-media normal"
+            />
+            <img
+              src="../main-image/gmail-white-hover -black.png"
+              alt="Email Hover"
+              class="social-media hover"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
     <footer>
       <div class="footer-container">
-          <div class="footer-profile">
-              <img class="footer-image" src="../main-image/cartoonJordynColoured.png" alt="Digital Representation of Jordyn">
-              <div class="footer-name">
-                  <p>Jordyn</p>
-                  <p>Van Aswegen</p>
-              </div>
+        <div class="footer-profile">
+          <img
+            class="footer-image"
+            src="../main-image/cartoonJordynColoured.png"
+            alt="Digital Representation of Jordyn"
+          />
+          <div class="footer-name">
+            <p>Jordyn</p>
+            <p>Van Aswegen</p>
           </div>
-  
-          <div class="footer-links">
+        </div>
 
+        <div class="footer-links">
+          <div class="footer-section">
+            <h3>
+              <li><a href="../index.html">Home</a></li>
+            </h3>
+          </div>
+          <div class="footer-section">
+            <h3>
+              <li><a href="../Pages/about.html">About Me</a></li>
+            </h3>
+          </div>
+          <div class="footer-section">
+            <h3>Portfolio</h3>
+            <ul>
+              <li><a href="../../Portfolio/art/index.html">Art</a></li>
+              <li>
+                <a href="../../Portfolio/game-dev/index.html">Game Design</a>
+              </li>
+              <li>
+                <a href="../../Portfolio/animation/index.html">Animation</a>
+              </li>
+            </ul>
+          </div>
 
-            <div class="footer-section">
-              
-              <h3>
-                <li><a href="../index.html">Home</a></li> 
-              </h3>
-            </div>
-            <div class="footer-section">
+          <div class="footer-section">
+            <h3>Interactive Media Work</h3>
+            <ul>
+              <li><a href="../Essays/index.html">Essays</a></li>
+              <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
+              <li>
+                <a href="../Design/index.html"
+                  >Web Development Design Process</a
+                >
+              </li>
+            </ul>
+          </div>
 
-              <h3>
-                <li><a href="../Pages/about.html">About Me</a></li>    
-              </h3>
-            </div>
-              <div class="footer-section">
-                  <h3>Portfolio</h3>
-                  <ul>
-                      <li><a href="../../Portfolio/art/index.html">Art</a></li>
-                      <li><a href="../../Portfolio/game-dev/index.html">Game Design</a></li>
-                      <li><a href="../../Portfolio/animation/index.html">Animation</a></li>
-                  </ul>
+          <div class="footer-section">
+            <h3>
+              <li><a href="../Pages/contact.html">Contact Me</a></li>
+            </h3>
+            <div class="footer-social">
+              <div class="social-row">
+                <a href="https://instagram.com/jetayla" target="_blank"
+                  ><i class="fi fi-brands-instagram"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/in/jordyntaylavanaswegen/"
+                  target="_blank"
+                  ><i class="fi fi-brands-linkedin"></i
+                ></a>
+                <a href="https://www.artstation.com/jetayla" target="_blank"
+                  ><i class="fi fi-brands-artstation"></i
+                ></a>
               </div>
-  
-              <div class="footer-section">
-                  <h3>Interactive Media Work</h3>
-                  <ul>
-                      <li><a href="../Essays/index.html">Essays</a></li>
-                      <li><a href="../BlogPosts/index.html">Blog Posts</a></li>
-                      <li><a href="../Design/index.html">Web Development Design Process</a></li>
-                  </ul>
-              </div>
-
-              <div class="footer-section">
-                <h3>
-                <li><a href="../Pages/contact.html">Contact Me</a></li> 
-              </h3>
-              <div class="footer-social">
-                <div class="social-row">
-                    <a href="https://instagram.com/jetayla" target="_blank"><i class="fi fi-brands-instagram"></i></a>
-                    <a href="https://linkedin.com/in/jordyntaylavanaswegen/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
-                    <a href="https://www.artstation.com/jetayla" target="_blank"><i class="fi fi-brands-artstation"></i></a>
-                </div>
-                <div class="social-row">
-                  <a href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A" target="_blank">
-                    <i class="fi fi-brands-youtube"></i>
+              <div class="social-row">
+                <a
+                  href="https://www.youtube.com/channel/UCAq8VyjTgHZpJjhjPxMlh7A"
+                  target="_blank"
+                >
+                  <i class="fi fi-brands-youtube"></i>
                 </a>
-                <a href="mailto:graphicdesignsbyjordyn@email.com" target="_blank">
-                  <img src="../main-image/gmail-white.png" alt="Gmail" class="social-icon normal"> 
-                  <img src="../main-image/gmail-white-hover.png" alt="Email Hover" class="social-icon hover">
-              </a>
-              <a href="https://jetayla.itch.io" target="_blank">
-                  <img src="../main-image/itchio-logo-textless-white.png" alt="Itch.io" class="social-icon normal">
-                  <img src="../main-image/itchio-logo-textless-white-hover.png" alt="Itch Hover" class="social-icon hover">
-              </a>
-               </div>
+                <a
+                  href="mailto:graphicdesignsbyjordyn@email.com"
+                  target="_blank"
+                >
+                  <img
+                    src="../main-image/gmail-white.png"
+                    alt="Gmail"
+                    class="social-icon normal"
+                  />
+                  <img
+                    src="../main-image/gmail-white-hover.png"
+                    alt="Email Hover"
+                    class="social-icon hover"
+                  />
+                </a>
+                <a href="https://jetayla.itch.io" target="_blank">
+                  <img
+                    src="../main-image/itchio-logo-textless-white.png"
+                    alt="Itch.io"
+                    class="social-icon normal"
+                  />
+                  <img
+                    src="../main-image/itchio-logo-textless-white-hover.png"
+                    alt="Itch Hover"
+                    class="social-icon hover"
+                  />
+                </a>
               </div>
-              </div>
-              
             </div>
-
           </div>
+        </div>
       </div>
-  </footer>
+    </footer>
   </body>
-
 </html>
