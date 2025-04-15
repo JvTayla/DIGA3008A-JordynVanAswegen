@@ -20,7 +20,7 @@ nav {
 }
 
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; 
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -28,10 +28,17 @@ nav {
     height: 25px;
     cursor: pointer;
 }
+.hamburger-icon {
+    display: none; 
+  }
+  .hamburger-toggle {
+    display: none; 
+  }
 .hamburger-toggle:checked{
     display: none;
 }
 .hamburger .bar {
+    display: none; 
     background-color: white;
     height: 4px;
     width: 100%;
@@ -445,6 +452,14 @@ footer {
     .hamburger {
         display: flex;
         align-items: flex-end;
+        font-size: 40px;
+        color: white;
+    }
+    .hamburger-icon{
+        
+        display: flex;
+        align-items: flex-end;
+        font-size: 40px;
         color: white;
     }
 
@@ -455,7 +470,12 @@ footer {
         flex-direction: column;
         width: 55%;
       }
-    
+      .hamburger-toggle {
+        display: none; 
+      }
+    .hamburger-toggle:checked{
+        display: none;
+    }
       .hamburger-toggle:checked ~ .main-nav {
         display: flex;
       }
