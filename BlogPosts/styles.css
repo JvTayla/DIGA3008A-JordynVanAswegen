@@ -116,8 +116,9 @@ nav .dropdown-menu li.activeback
     color: #000000;
     text-decoration: underline;
 }
-.p time{
+.time{
    color: #ffffff; 
+   font-size: 1.25em;
 }
 
 .image {
