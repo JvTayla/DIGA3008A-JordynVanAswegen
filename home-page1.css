@@ -1,0 +1,98 @@
+
+.space {
+    height: 20px;
+  }
+  
+  .homepage-container {
+    display: flex;
+    width: 80%;
+     height: 100%;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    border-radius:25px;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    box-shadow: 0 0 00 rgba(0, 0, 0, 0.1);
+    color: rgb(255, 0, 0);
+  }
+  
+  
+  .homepage-container h2 {
+    text-transform: uppercase;
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    width: 100%;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+
+  .homepage p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .homepage ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .hello{
+    font-size: 3rem;
+    color: #a81000;
+  }
+  .helloo{
+    font-size: 2rem;
+    color: #a81000;
+  }
+  .homepage p{
+
+    font-weight: bold;
+  }
+  .homepageli {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .homepage a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.75em;
+    font-weight: bold;
+  }
+  
+  .homepage a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+ 
+  .portfolio, .recent-projects, .design {
+    margin-bottom: 2rem;
+  }
+ 
+  .recent-projects {
+    background-color: #ffcc00; 
+    width: 100%;
+  }
+  
+  .portfolio {
+    background-color: #a81000; 
+    width: 100%;
+  }
+  
+  .design {
+    background-color: #200092; 
+    width: 100%;
+  }
+  
+
+  .homepage h2 {
+    color: #ffffff;
+    font-size: 3rem;
+  }

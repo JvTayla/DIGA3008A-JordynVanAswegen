@@ -183,7 +183,9 @@ nav .dropdown-menu li a.active {
     background-color: #a81000;
     border-radius: 5px;
 }
-
+.space {
+    height: 20px;
+  }
 .contact-nav {
     background-color: #292f34;
     padding: 10px 20px;
@@ -397,8 +399,3 @@ footer {
 .social-row a:hover .hover {
     display: block;
 }
-.space {
-    margin-top: 2rem;
-    color: transparent; /* hides the dot */
-    user-select: none;  /* optional: prevents selection */
-  }
