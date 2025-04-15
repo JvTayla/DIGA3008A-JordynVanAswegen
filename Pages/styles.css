@@ -404,3 +404,66 @@ a:hover .social-icon.hover {
 .contact-form button:hover {
   background-color: #e6b800;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .aboutme-nav,
+  .aboutme-main {
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  .jordyn-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .aboutme-main h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .aboutme-main h3,
+  .aboutme-main h4 {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  .aboutme-main article {
+    text-align: center;
+  }
+
+  .aboutme-main article p {
+    font-size: 1.25rem;
+    padding: 10px;
+  }
+
+  .skill ul {
+    justify-content: center;
+  }
+
+  .skill li {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-links a {
+    transform: scale(1.5);
+  }
+
+  .social-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
