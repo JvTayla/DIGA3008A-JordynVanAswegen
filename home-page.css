@@ -424,7 +424,7 @@ footer {
 .social-row a:hover .hover {
     display: block;
 }
-
+ 
 
 @media (max-width: 768px) {
     header {
@@ -442,6 +442,7 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
+        
         align-items: flex-start; 
         justify-content: space-between;
         border-bottom: 3px solid white;
@@ -456,7 +457,7 @@ footer {
         color: white;
     }
     .hamburger-icon{
-        
+
         display: flex;
         align-items: flex-end;
         font-size: 40px;
