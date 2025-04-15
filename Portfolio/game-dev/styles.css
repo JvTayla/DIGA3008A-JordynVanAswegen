@@ -245,6 +245,23 @@ box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 background-color: #a81000;
 color: rgb(255, 255, 255);
 }
+.link{
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  gap: 1.5rem; 
+  flex-wrap: wrap; 
+  color: white;
+}
+.link hover{
+color: #200092;
+}
+.project-block.li{
+  list-style: none;
+}
 .container h3{
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
