@@ -19,6 +19,24 @@ nav {
     border-bottom: 3px solid white;
 }
 
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+.hamburger-toggle:checked{
+    display: none;
+}
+.hamburger .bar {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
 .profile-nav {
     display: flex;
     align-items: center;  
@@ -398,4 +416,159 @@ footer {
 
 .social-row a:hover .hover {
     display: block;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row-reverse; /* This will push the hamburger icon to the right */
+        justify-content: space-between; /* Ensure proper spacing */
+      }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    nav {
+        background-color: #292f34;
+        padding:  15px 20px ;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        justify-content: space-between;
+        border-bottom: 3px solid white;
+    }
+    .hamburger-toggle:checked{
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+        align-items: flex-end;
+        color: white;
+    }
+
+    .main-nav {
+        display: none;
+        align-items: end;
+        align-self: flex-end;
+        flex-direction: column;
+        width: 55%;
+      }
+    
+      .hamburger-toggle:checked ~ .main-nav {
+        display: flex;
+      }
+      
+      .hamburger-icon {
+        display: block;
+        margin-left: auto; /* Align the hamburger menu to the right */
+      }
+    .profile-nav {
+        display: flex;
+        align-items: center;  
+        gap: 15px;  
+      }
+      
+      .profile-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid rgb(0, 0, 0);
+        object-fit: cover;
+      }
+      
+      .name-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.1;
+      }
+      
+      .name-container p {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-family: 'Bangers', cursive;
+        margin: 0;
+        text-align: left;
+        letter-spacing: 3px;
+        text-shadow: 
+        1px 1px 0 #000,   
+        -1px -1px 0 #000, 
+        1px -1px 0 #000,  
+        -1px 1px 0 #000;  
+      }
+  
+    nav .dropdown-menu {
+        width: 55%; 
+        position: static; 
+        box-shadow: none; 
+        transform: translateX(10%);
+    }
+
+   
+    nav .dropdown label {
+        font-size: 18px; 
+        padding: 12px 20px;
+    }
+
+    nav .dropdown-menu li a {
+        font-size: 16px;
+        padding: 12px 16px; 
+    }
+
+   
+    nav .dropdown input[type="checkbox"]:checked + label + .dropdown-menu {
+        display: block;
+    }
+    .footer-container {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        align-items: center;
+        padding: 0 15px; /* Adjust padding for mobile */
+    }
+
+    .footer-profile {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-image{
+        display: none;
+    }
+    .footer-name{
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%; /* Full width for each section */
+        text-align: center; /* Center text on mobile */
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Ensure Home and About Me are on the first row, others on the second row */
+    .footer-section:nth-child(1),
+    .footer-section:nth-child(2) {
+        order: 1; /* First row */
+    }
+
+    .footer-section:nth-child(3),
+    .footer-section:nth-child(4),
+    .footer-section:nth-child(5) {
+        order: 2; /* Second row */
+    }
+
+    .footer-section h3 {
+        font-size: 20px; /* Increase font size on mobile */
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        font-size: 14px;
+        padding: 10px 0;
+    }
 }
