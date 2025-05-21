@@ -87,26 +87,77 @@ nav .dropdown-menu li.activeback
   }
 
   .aboutme-nav {
-    flex: 1;
-    background-color: #a11717;
-    max-width: 500px;
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  background-color: #a11717;
+  max-width: 500px;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   }
-  
+  .image-container {
+  position: relative;
+  width: 350px;  
+  height: 450px; 
+  margin-bottom: 1rem; 
+}
+
   .jordyn-image {
+    position: absolute;
     width: 350px;
     height: 450px;
     object-fit: cover;
     border: 5px solid white;
     border-radius: 12px;
     margin-bottom: 1rem;
+    opacity:0 ;
   }
+
+.jordyn-image.showing {
+   opacity: 1;
+  z-index: 2;
+}
+
+/* Flip out animation (rotateY 0 to 90 degrees) */
+.flip-out {
+  animation: flipOut 0.6s forwards;
+  z-index: 1;
+}
+
+/* Flip in animation (rotateY -90 to 0 degrees) */
+.flip-in {
+  animation: flipIn 0.6s forwards;
+  opacity: 1 !important; /* ensure visible during flip-in */
+  z-index: 3;
+}
+
+@keyframes flipOut {
+  from {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipIn {
+  from {
+    transform: rotateY(-90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
    
 .education-section,
 .interests-section {
