@@ -1,27 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".jordyn-image");
-  const clickMeButton = document.querySelector('.click-me');
-
   let currentIndex = 0;
-  const duration = 600;
+  const duration = 600; 
 
-  // Show the "click-me" element after 5 seconds
+  const clickMeButton = document.querySelector('.click-me');
+  const popup = document.getElementById('popup-message');
+  const closeBtn = document.getElementById('close-popup');
+  const flipSound = document.getElementById('flip-sound');
+
+  // Show "Click me" button after 5 seconds
   setTimeout(() => {
     if (clickMeButton) {
       clickMeButton.style.display = 'block';
     }
-  }, 50);
+  }, 5000);
 
   images.forEach(img => {
     img.addEventListener("click", () => {
-      // Hide the "click-me" element when any image is clicked
-      if (clickMeButton) {
-        clickMeButton.style.display = 'none';
-      }
-
       // Prevent clicks during animation
       if (img.classList.contains("flip-out") || img.classList.contains("flip-in")) {
         return;
+      }
+
+      // Play flip sound effect
+      if (flipSound) {
+        flipSound.currentTime = 0; // rewind to start
+        flipSound.play();
+      }
+
+      // Hide "Click me" button when any image is clicked
+      if (clickMeButton) {
+        clickMeButton.style.display = 'none';
       }
 
       const current = images[currentIndex];
@@ -47,4 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }, duration);
     });
   });
+
+  // Show popup when "Click me" button clicked
+  if (clickMeButton && popup && closeBtn) {
+    clickMeButton.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+
+    // Close popup
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  }
 });
