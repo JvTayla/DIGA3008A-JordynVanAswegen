@@ -92,12 +92,7 @@
   justify-content: center;
   gap: 1em; 
 }
-.starter-pack {
-  width: 100%;
-  display: flex;
-  justify-content: center;  /* centers content horizontally */
-  padding: 20px 0;          /* optional vertical spacing */
-}
+
 /* Make left side smaller */
 .main-image {
   flex: 1.75; /* smaller flex */
