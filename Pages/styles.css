@@ -106,14 +106,29 @@ nav .dropdown-menu li.activeback
   height: 450px; 
   margin-bottom: 1rem; 
 }
+.click-me {
+  position: absolute;
+  top: -25px;
+  right: 120px;
+  z-index:10;
+  
+  transition: transform 0.3s ease;
+ 
+}
+
+.click-me img {
+  width: 200px; /* adjust size */
+}
+
 
 
   .jordyn-image {
+    cursor: pointer;
     position: absolute;
     width: 350px;
     height: 450px;
     object-fit: cover;
-    border: 5px solid white;
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 12px;
     margin-bottom: 1rem;
     opacity:0 ;

@@ -1,10 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll(".jordyn-image");
+  const clickMeButton = document.querySelector('.click-me');
+
   let currentIndex = 0;
-  const duration = 600; 
+  const duration = 600;
+
+  // Show the "click-me" element after 5 seconds
+  setTimeout(() => {
+    if (clickMeButton) {
+      clickMeButton.style.display = 'block';
+    }
+  }, 50);
 
   images.forEach(img => {
     img.addEventListener("click", () => {
+      // Hide the "click-me" element when any image is clicked
+      if (clickMeButton) {
+        clickMeButton.style.display = 'none';
+      }
+
       // Prevent clicks during animation
       if (img.classList.contains("flip-out") || img.classList.contains("flip-in")) {
         return;
@@ -34,4 +48,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
