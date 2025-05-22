@@ -43,14 +43,25 @@
     text-align: center;
     margin-top: 1rem;
   }
-  .hello{
-    font-size: 3rem;
-    color: #a81000;
-  }
-  .helloo{
-    font-size: 2rem;
-    color: #a81000;
-  }
+.hello {
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 6rem; /* was 5rem */
+  color: #a81000;
+}
+
+.helloo {
+  text-transform: uppercase;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  color: rgb(0, 10, 56);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 3.5rem; /* more readable than 2.5rem */
+}
   .homepage p{
 
     font-weight: bold;
@@ -96,6 +107,7 @@
     color: #ffffff;
     font-size: 3rem;
   }
+  
 
   @media (max-width: 768px){
 
