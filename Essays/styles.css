@@ -36,6 +36,18 @@ nav .dropdown-menu li.activeback
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     
 }
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.essay-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .intext-link{
   color: red;
   font-weight: bold;
