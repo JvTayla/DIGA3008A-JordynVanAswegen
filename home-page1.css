@@ -82,31 +82,6 @@
     color: #ffffff;
     text-decoration: underline;
   }
- 
-  .portfolio, .recent-projects, .design {
-    margin-bottom: 2rem;
-  }
- 
-  .recent-projects {
-    background-color: #ffcc00; 
-    width: 100%;
-  }
-  
-  .portfolio {
-    background-color: #a81000; 
-    width: 100%;
-  }
-  
-  .design {
-    background-color: #200092; 
-    width: 100%;
-  }
-  
-
-  .homepage h2 {
-    color: #ffffff;
-    font-size: 3rem;
-  }
  .project-gallery {
   width: 100%;
   display: flex;
@@ -158,6 +133,34 @@
   transform: scale(1.05);
 }
 
+  .portfolio, .recent-projects, .design, .starter-pack{
+    margin-bottom: 2rem;
+  }
+ .starter-pack {
+    background-color: #200092; 
+    width: 100%;
+  }
+  .recent-projects {
+    background-color: #ffcc00; 
+    width: 100%;
+  }
+  
+  .portfolio {
+    background-color: #a81000; 
+    width: 100%;
+  }
+  
+  .design {
+    background-color: #200092; 
+    width: 100%;
+  }
+  
+
+  .homepage h2 {
+    color: #ffffff;
+    font-size: 3rem;
+  }
+ 
   @media (max-width: 768px){
 
     .space {
