@@ -22,6 +22,41 @@ nav .dropdown-menu li.activeback
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
+.blog-container {
+    display: flex;
+    width: 80%;
+     height: 80%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+  flex-direction: column; 
+  
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-color:  #200092;
+  color: rgb(255, 255, 255);
+  }
+   .blog-container h3{
+    text-transform: uppercase;
+    font-family: "Bangers", system-ui;
+    font-weight: 100;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 5px;
+  }
+  .blog-container p{
+    font-size: 1.5rem;
+    text-align: center;
+  margin-bottom: 0.5rem;
+  }
 .container {
     display: flex;
     width: 80%;
@@ -106,7 +141,49 @@ nav .dropdown-menu li.activeback
     flex-wrap: wrap;
     margin-top: 2rem;
   }
-  
+  .blog-portfolio-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .blog-section {
+    flex: 1 1 20%;
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+  color: #fffb00;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.blog-section img{
+   cursor: pointer;
+    text-align: center;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.blog-section h2{
+
+  font-family:  "Bangers", system-ui;;
+  text-shadow:
+    -2px -2px 0 rgb(0, 0, 0),
+     2px -2px 0 rgb(0, 0, 0),
+    -2px  2px 0 rgb(0, 0, 0),
+     2px  2px 0 rgb(0, 0, 0);
+}
+
+.blog-section:hover {
+    transform: scale(1.05);
+}
   
   .portfolio-section {
     display: flex;

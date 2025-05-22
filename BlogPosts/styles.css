@@ -144,6 +144,7 @@ nav .dropdown-menu li.activeback
     
 }
 
+
 .blog-post::-webkit-scrollbar {
     width: 6px;
 }
@@ -220,3 +221,4 @@ nav .dropdown-menu li.activeback
 .back-btn:hover {
     background-color: #0056b3;
 }
+
