@@ -76,7 +76,7 @@ nav .dropdown-menu li.activeback
     background-color: #ffcc00;
     color: rgb(12, 12, 12);
     text-align: center;
-    padding: 12px 10px;
+    padding: 0.5em;
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
@@ -95,7 +95,7 @@ nav .dropdown-menu li.activeback
 
 .right-column {
     width: 100%;
-    padding: 10px;
+    padding: 1em;
     background-color: #200092;
     overflow: hidden;
 }
