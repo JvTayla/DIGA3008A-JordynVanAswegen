@@ -216,50 +216,55 @@ nav .dropdown-menu li.activeback
 }
 
 
-.next-btn {
-    display: inline-block;
-    padding: 20px; 
-    background-color: #200092;
-    color: white;
-    text-decoration: none;
-    border-radius: 50%;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px; 
-    position: fixed; 
-    bottom: 350px; 
-    right: 50px; 
-    width: 100px; 
-    height: 100px; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.next-btn:hover {
-    background-color: #0056b3;
-}
+.next-btn,
 .back-btn {
-    display: inline-block;
-    padding: 20px; 
+    padding: 20px;
     background-color: #200092;
     color: white;
-    text-decoration: none;
+    border: none;
     border-radius: 50%;
     font-weight: bold;
     text-align: center;
-    font-size: 20px; 
-    position: fixed; 
-    bottom: 350px; 
-    left: 50px; 
-    width: 100px; 
-    height: 100px; 
+    font-size: 20px;
+    position: fixed;
+    bottom: 350px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
 }
 
+.next-btn:hover,
 .back-btn:hover {
     background-color: #0056b3;
 }
 
+.next-btn {
+    right: 50px;
+}
+
+.back-btn {
+    left: 50px;
+}
+
+/* Mobile support */
+@media screen and (max-width: 768px) {
+    .next-btn,
+    .back-btn {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+        bottom: 100px;
+    }
+
+    .next-btn {
+        right: 20px;
+    }
+
+    .back-btn {
+        left: 20px;
+    }
+}
