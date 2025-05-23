@@ -51,14 +51,14 @@ body {
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
-  width: 1000px;       /* fixed width */
-  height: 900px;       /* fixed height */
+  width: 1000px;       
+  height: 900px;       
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;  /* for absolute children */
-  box-sizing: border-box; /* include padding in width/height */
+  position: relative;  
+  box-sizing: border-box; 
   overflow: hidden;
 }
 
@@ -95,17 +95,16 @@ body {
   cursor: pointer;
 }
 
-/* Remove absolute positioning from .lightbox-nav container */
+
 .lightbox-nav {
   position: relative;
   width: 100%;
   margin-top: 1rem;
   display: flex;
-  justify-content: center; /* centered or use space-between if needed */
+  justify-content: center; 
   padding: 0 2rem;
 }
 
-/* Position Prev and Next buttons absolutely relative to .lightbox-content */
 #lightbox-prev,
 #lightbox-next {
   position: absolute;
@@ -124,14 +123,14 @@ body {
   -webkit-user-select: none;
 }
 
-/* Left side Prev */
+
 #lightbox-prev {
-  left: 10px; /* distance from left edge */
+  left: 10px; 
 }
 
-/* Right side Next */
+
 #lightbox-next {
-  right: 10px; /* distance from right edge */
+  right: 10px; 
 }
 
 #lightbox-prev:hover,
