@@ -20,13 +20,13 @@ nav {
 }
 #burst-container {
   position: fixed;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allows clicks to pass through */
-  z-index: -1; /* Stay behind everything */
+  pointer-events: none; /* prevent blocking clicks except on stars */
   overflow: hidden;
+  z-index: -1;
 }
 
 .star, .burst {
@@ -35,6 +35,7 @@ nav {
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
   pointer-events: auto;
 }
 

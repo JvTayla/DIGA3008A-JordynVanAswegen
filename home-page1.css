@@ -92,7 +92,50 @@
   justify-content: center;
   gap: 1em; 
 }
+#burst-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* prevent blocking clicks except on stars */
+  overflow: hidden;
+  z-index: 5000;
+}
 
+.star, .burst {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.star {
+  animation: floatUp 8s linear forwards, rotate 8s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Make left side smaller */
 .main-image {
   flex: 1.75; /* smaller flex */
