@@ -18,6 +18,29 @@ nav {
     justify-content: space-between;
     border-bottom: 3px solid white;
 }
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#backToTopBtn img {
+  width: 48px; 
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+#backToTopBtn:hover img {
+  transform: scale(1.1);
+}
 #burst-container {
   position: fixed;
   width: 100vw;
