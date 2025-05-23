@@ -1,85 +1,90 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const burstContainer = document.getElementById("burst-container");
+  const burstContainer = document.getElementById("burst-container");
 
-const burstImages = [
-  "main-image/diamond.png",
-  "main-image/lightning.png",
-  "main-image/wings.png",
-  "main-image/dice.png"
-];
+  const burstImages = [
+    "main-image/diamond.png",
+    "main-image/lightning.png",
+    "main-image/wings.png",
+    "main-image/dice.png"
+  ];
 
-const popSequence = [
-  "main-image/star-pop1.png",
-  "main-image/star-pop2.png",
-  "main-image/star-pop3.png"
-];
+  const popSequence = [
+    "main-image/star-pop1.png",
+    "main-image/star-pop2.png",
+    "main-image/star-pop3.png"
+  ];
 
-function createStar() {
-  const star = document.createElement("div");
-  star.classList.add("star");
+  const popSound = document.getElementById("pop-sound");
 
-  star.style.left = `${Math.random() * window.innerWidth}px`;
-  star.style.bottom = `0px`;
-  star.style.backgroundImage = `url(${popSequence[0]})`;
+  function createStar() {
+    const star = document.createElement("div");
+    star.classList.add("star");
+    star.style.left = `${Math.random() * window.innerWidth}px`;
+    star.style.bottom = `0px`;
+    star.style.backgroundImage = `url(${popSequence[0]})`;
 
-  // Start floating up and rotating
-  let bottom = 0;
-  let rotation = 0;
-  const floatInterval = setInterval(() => {
-    bottom += 1; // speed of floating up
-    rotation += 2; // degrees per tick
-    star.style.bottom = bottom + "px";
-    star.style.transform = `rotate(${rotation}deg)`;
-    if (bottom > window.innerHeight + 50) { // remove when out of view
-      clearInterval(floatInterval);
+    // Random delay & duration
+    const delay = Math.random() * 5;
+    const duration = 6 + Math.random() * 4;
+
+    star.style.animationDelay = `${delay}s`;
+    star.style.animationDuration = `${duration}s, ${duration}s`;
+
+    star.addEventListener("click", () => {
+      playPopAnimation(star);
+    });
+
+    burstContainer.appendChild(star);
+
+    // Remove star after it floats off
+    setTimeout(() => {
       if (burstContainer.contains(star)) {
         star.remove();
         createStar();
       }
+    }, (delay + duration + 1) * 1000); // buffer time
+  }
+
+  function playPopAnimation(star) {
+    // Play pop sound here on pop start
+    if (popSound) {
+      popSound.currentTime = 0;
+      popSound.play().catch(e => {
+        // handle autoplay restrictions silently
+        console.warn("Pop sound play failed:", e);
+      });
     }
-  }, 20);
 
-  star.addEventListener("click", () => {
-    clearInterval(floatInterval);
-    playPopAnimation(star);
-  });
+    let frame = 0;
+    const interval = setInterval(() => {
+      if (frame < popSequence.length) {
+        star.style.backgroundImage = `url(${popSequence[frame]})`;
+        frame++;
+      } else {
+        clearInterval(interval);
+        showBurst(star);
+      }
+    }, 100);
+  }
 
-  burstContainer.appendChild(star);
-}
+  function showBurst(star) {
+    const burst = document.createElement("div");
+    burst.classList.add("burst");
+    burst.style.left = star.style.left;
+    burst.style.top = star.getBoundingClientRect().top + "px";
+    burst.style.backgroundImage = `url(${burstImages[Math.floor(Math.random() * burstImages.length)]})`;
 
-function playPopAnimation(star) {
-  let frame = 0;
-  const interval = setInterval(() => {
-    if (frame < popSequence.length) {
-      star.style.backgroundImage = `url(${popSequence[frame]})`;
-      frame++;
-    } else {
-      clearInterval(interval);
-      showBurst(star);
-    }
-  }, 100);
-}
+    burstContainer.appendChild(burst);
+    star.remove();
 
-function showBurst(star) {
-  const burst = document.createElement("div");
-  burst.classList.add("burst");
-  burst.style.left = star.style.left;
-  // Position at star’s current bottom position converted to top relative to viewport
-  const rect = star.getBoundingClientRect();
-  burst.style.top = rect.top + "px";
-  burst.style.backgroundImage = `url(${burstImages[Math.floor(Math.random() * burstImages.length)]})`;
+    setTimeout(() => {
+      burst.remove();
+      createStar();
+    }, 3000); // 3 seconds display
+  }
 
-  burstContainer.appendChild(burst);
-  star.remove();
-
-  setTimeout(() => {
-    burst.remove();
-    createStar();
-  }, 800);
-}
-
-// Create multiple stars
-for (let i = 0; i < 15; i++) {
-  setTimeout(createStar, Math.random() * 5000);
-}
+  // Create initial stars
+  for (let i = 0; i < 8; i++) {
+    setTimeout(createStar, Math.random() * 5000);
+  }
 });

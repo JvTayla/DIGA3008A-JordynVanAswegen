@@ -24,42 +24,37 @@ nav {
   height: 100vh;
   top: 0;
   left: 0;
-  pointer-events: none; /* prevent blocking clicks except on stars */
+  pointer-events: none;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 .star, .burst {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   background-size: contain;
   background-repeat: no-repeat;
-  cursor: pointer;
   pointer-events: auto;
+  cursor: pointer;
 }
 
 .star {
-  animation: floatUp 8s linear forwards, rotate 8s linear infinite;
+  opacity: 0;
+  animation: floatRotate 8s linear forwards, rotate 8s linear infinite;
 }
 
-@keyframes floatUp {
-  0% {
+@keyframes floatRotate {
+ 0% {
     transform: translateY(0);
-    opacity: 1;
+    opacity: 0; /* start invisible */
+  }
+  10% {
+    opacity: 1; /* fade in quickly */
   }
   100% {
     transform: translateY(-100vh);
-    opacity: 0;
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    opacity: 0; /* fade out as it exits */
   }
 }
 .hamburger {

@@ -16,6 +16,8 @@
       content=" writing, portfolio, creative projects, interactive media, essay, freelance, about, contact"
     />
     <meta name="author" content="Jordyn Van Aswegen" />
+    <script src="contact.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../home-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -140,18 +142,20 @@
         </div>
 
         <div class="right-column">
-          <form class="contact-form" action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+         <form class="contact-form" id="contact-form" action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button disabled>This is just for vibes</button>
-          </form>
+    <button type="submit" disabled>Just for Vibes - the Google Sheets thing didnt work</button>
+  </form>
+
+  <p id="response-msg"></p>
         </div>
       </div>
       <ul class="c-contact-links">
