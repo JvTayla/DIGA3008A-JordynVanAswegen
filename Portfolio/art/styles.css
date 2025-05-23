@@ -33,7 +33,111 @@ body {
     padding: 0;
     color: #222;
   }
-  
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  background: #a81000;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 1000px;       /* fixed width */
+  height: 900px;       /* fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;  /* for absolute children */
+  box-sizing: border-box; /* include padding in width/height */
+  overflow: hidden;
+}
+
+.lightbox-content img {
+  max-height: 47em;
+  height: auto;
+  border-radius: 8px;
+}
+
+.lightbox-title {
+  font-family: "Bangers", system-ui;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  color: #000000;
+  text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 rgb(255, 255, 255),
+    -1px  1px 0 rgb(255, 255, 255),
+     1px  1px 0 rgb(255, 255, 255);
+}
+
+.lightbox-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: white;
+  opacity: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Remove absolute positioning from .lightbox-nav container */
+.lightbox-nav {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* centered or use space-between if needed */
+  padding: 0 2rem;
+}
+
+/* Position Prev and Next buttons absolutely relative to .lightbox-content */
+#lightbox-prev,
+#lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-1500%);
+  background-color: #200092;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Left side Prev */
+#lightbox-prev {
+  left: 10px; /* distance from left edge */
+}
+
+/* Right side Next */
+#lightbox-next {
+  right: 10px; /* distance from right edge */
+}
+
+#lightbox-prev:hover,
+#lightbox-next:hover {
+  background-color: #4a19fa;
+}
   .gallery-wrapper {
     display: flex;
   flex-direction: column;

@@ -10,6 +10,7 @@
 
     <link rel=" stylesheet" href="../../home-page.css">
     <link rel=" stylesheet" href="styles.css">
+    <script src="lightbox.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -121,15 +122,15 @@
         <div class="gallery-category">
           <h3>Clown Girl</h3>
         <div class="image-grid">
-          <img class="dig-art-image" src="dig-image/Character Studies Lineart Practice (5).png" alt="Lineart 1">
-          <img class="dig-art-image" src="dig-image/55.png" alt="Lineart 2">
-          <img class="dig-art-image" src="dig-image/Character Studies Colour Practice (2).png" alt="Lineart 3">
+          <img class="dig-art-image" src="dig-image/Character Studies Lineart Practice (5).png" alt="Lineart 1" data-title="Clown Girl - Colour Exploration" data-description="An early test of colour palette and shading using soft brushes.">          
+          <img class="dig-art-image" src="dig-image/55.png" alt="Lineart 2" data-title="Clown Girl - Colour Exploration" data-description="An early test of colour palette and shading using soft brushes.">
+          <img class="dig-art-image" src="dig-image/Character Studies Colour Practice (2).png" alt="Lineart 3"data-title="Clown Girl - Colour Exploration" data-description="An early test of colour palette and shading using soft brushes.">
         </div>
       </div> 
       <div class="gallery-category">
         <h3>Airbrushing</h3>
         <div class="image-grid">
-          <img class="dig-art-image" src="dig-image/Character Studies Lineart Practice (4).png" alt="Lineart 4">
+          <img class="dig-art-image" src="dig-image/Character Studies Lineart Practice (4).png" alt="Lineart 4" >
           <img class="dig-art-image" src="dig-image/Character Studies Colour Practice.png" alt="Lineart 5">
           <img class="dig-art-image" src="dig-image/Character Studies Lineart + ColourPractice.png" alt="Lineart 6">
         </div>
@@ -184,7 +185,18 @@
       </div>
     
     </div>
-
+<div id="lightbox" class="lightbox-overlay">
+  <span id="lightbox-close" class="lightbox-close">&times;</span>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="Large view">
+    <h3 id="lightbox-title" class="lightbox-title"></h3>
+    <p id="lightbox-description" class="lightbox-description"></p>
+    <div class="lightbox-nav">
+      <button id="lightbox-prev">← Prev</button>
+      <button id="lightbox-next">Next →</button>
+    </div>
+  </div>
+</div>
     <a href="../art/traditional-art.html" class="next-btn">Traditional Art</a>
   <footer>
       <div class="footer-container">
