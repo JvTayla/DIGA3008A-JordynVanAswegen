@@ -39,6 +39,9 @@ nav .dropdown-menu li.activeback
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
+.blog-image{
+    max-width: 400px;
+}
 
 /* Left column */
 .left-column {
