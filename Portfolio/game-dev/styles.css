@@ -23,6 +23,27 @@ nav .dropdown-menu li.activeback
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
+.title-row {
+  display: flex;
+  justify-content: space-between; /* title left, role tag right */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.role-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  border: 1.5px solid #ffffff;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #200092;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
 .container {
   display: flex;
   width: 80%;
@@ -256,6 +277,15 @@ color: rgb(255, 255, 255);
   flex-wrap: wrap; 
   color: white;
 }
+ul{
+  padding-top: 1em;
+  list-style: none; ;
+}
+.container.ul{
+  font-size: 2em;
+padding-top: 1em;
+  list-style: none; 
+}
 .link hover{
 color: #200092;
 }
@@ -280,4 +310,16 @@ color: #200092;
   color: rgb(255, 255, 255);
   
   margin-top: 5px;
+}
+@media (max-width: 600px) {
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start; /* left align when stacked */
+  }
+
+  .role-tag {
+    margin-top: 8px;
+    font-size: 1rem;
+    white-space: normal; /* allow wrapping */
+  }
 }
