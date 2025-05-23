@@ -60,6 +60,9 @@ body {
   position: relative;  
   box-sizing: border-box; 
   overflow: hidden;
+  color: #ffffff;
+  
+  font-weight: bold;
 }
 
 .lightbox-content img {
