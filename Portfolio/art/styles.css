@@ -110,7 +110,7 @@ body {
 #lightbox-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-1500%);
+  transform: translateY(-1300%);
   background-color: #200092;
   color: white;
   border: none;
