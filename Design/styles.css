@@ -103,7 +103,19 @@ ul{
     width: 200px;
    
   }
-  
+  .brand-link {
+    color: #a81000;         /* red color */
+    font-weight: bold;      /* bold text */
+    text-decoration: none;  /* remove underline */
+    cursor: pointer;        /* show pointer cursor on hover */
+    
+}
+  a{
+     color: #a81000;         
+    font-weight: bold;      
+    text-decoration: none;  
+    cursor: pointer;
+  }
   .wireframe-image {
     width: 500px;
     height: auto;
