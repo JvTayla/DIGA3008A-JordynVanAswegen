@@ -279,11 +279,11 @@ nav .dropdown-menu li.activeback
     }
 
     .next-btn {
-        right: 20px;
+        right: 10px;
     }
 
     .back-btn {
-        left: 20px;
+        left: 0px;
     }
    
   .blog-list {

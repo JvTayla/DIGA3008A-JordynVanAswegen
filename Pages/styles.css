@@ -479,12 +479,20 @@ a:hover .social-icon.hover {
     height: auto;
     margin-top: 2rem;
   }
-
+.image-container{
+  top: 1em;
+  left: 2.5em;
+}
   .aboutme-nav,
   .aboutme-main {
     max-width: 100%;
     border-radius: 20px;
   }
+  .click-me{
+   z-index: 99999; 
+ 
+  }
+ 
 
   .jordyn-image {
     width: 80%;
