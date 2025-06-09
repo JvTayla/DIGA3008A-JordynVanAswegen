@@ -515,7 +515,15 @@ footer {
         font-family: Arial, sans-serif;
         background-color: #f4f4f4;
     }
-    
+    .contact-nav {
+        position: absolute;
+
+    top: 0;
+    left: 0;
+    margin-left:  25em  ;
+    margin-right: 1em; /* aligns with name text after the profile image (tweak as needed) */
+    margin-top: 3em;
+  }
     nav {
         background-color: #292f34;
         padding:  15px 20px ;
@@ -537,7 +545,9 @@ footer {
         color: white;
     }
     .hamburger-icon{
-
+        position: absolute;
+        top: 0.9em;
+        left: 14.5em;
         display: flex;
         align-items: flex-end;
         font-size: 40px;

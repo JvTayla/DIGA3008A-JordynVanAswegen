@@ -5,7 +5,7 @@ function getCurrentPostNumber() {
 
 function goToNextPost() {
   const currentPost = getCurrentPostNumber();
-  if (currentPost !== null && currentPost < 10) {
+  if (currentPost !== null && currentPost < 11) {
     window.location.href = `blog-post-${currentPost + 1}.html`;
   }
 }
