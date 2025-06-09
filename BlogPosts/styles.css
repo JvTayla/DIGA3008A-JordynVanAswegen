@@ -232,38 +232,42 @@ nav .dropdown-menu li.activeback
 
 .next-btn,
 .back-btn {
-    padding: 20px;
-    background-color: #10004b;
-    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain; /* ensures image fits the button */
+    background-position: center;
     border: none;
-    border-radius: 50%;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
+    padding: 0;
+    width: 9em;  /* adjust as needed */
+    height: 9em;
     position: fixed;
     bottom: 350px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     z-index: 1000;
 }
 
-.next-btn:hover,
-.back-btn:hover {
-    background-color: #0056b3;
+/* Ensure image scales properly inside the button */
+.next-btn img,
+.back-btn img {
+    width: 100%;   /* Adjust to fit nicely inside the circle */
+    height: auto;
+    object-fit: contain;
 }
 
 .next-btn {
+    background-image: url('../main-image/Next.png');
     right: 50px;
 }
 
 .back-btn {
+    background-image: url('../main-image/Back.png');
     left: 50px;
 }
 
+.next-btn:hover,
+.back-btn:hover {
+    filter: brightness(0.8); /* simple hover effect */
+}
 /* Mobile support */
 @media screen and (max-width: 768px) {
     .next-btn,
