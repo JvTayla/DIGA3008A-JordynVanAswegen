@@ -198,10 +198,14 @@ body {
   
   .trad-art-image:hover,
   .trad-art-image-square:hover {
+    cursor: pointer;
+
     transform: scale(1.02);
     box-shadow: 0 12px 24px rgba(255, 230, 0, 0.2);
   }
   .dig-art-image {
+    cursor: pointer;
+
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
