@@ -2,22 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToTopBtn = document.getElementById("backtotopbtn");
 
   if (backToTopBtn) {
-    // Apply your CSS styles directly via JS
-    backToTopBtn.style.display = "none";
-    backToTopBtn.style.position = "fixed";
-    backToTopBtn.style.bottom = "40px";
-    backToTopBtn.style.right = "30px";
-    backToTopBtn.style.zIndex = "99";
-    backToTopBtn.style.background = "transparent";
-    backToTopBtn.style.border = "none";
-    backToTopBtn.style.padding = "0";
-    backToTopBtn.style.cursor = "pointer";
+  
 
     const backToTopImg = backToTopBtn.querySelector("img");
     if (backToTopImg) {
-      backToTopImg.style.width = "60px";
-      backToTopImg.style.height = "60px";
-      backToTopImg.style.transition = "transform 0.3s ease";
+      
 
       // Add hover effect via JS
       backToTopBtn.addEventListener("mouseenter", () => {

@@ -5,7 +5,7 @@ function getCurrentEssayNumber() {
 
 function goToNextEssay() {
   const currentEssay = getCurrentEssayNumber();
-  const maxEssayNumber = 10; // Change this if you have more or fewer essays
+  const maxEssayNumber = 3; 
   if (currentEssay !== null && currentEssay < maxEssayNumber) {
     window.location.href = `../Essays/essay-${currentEssay + 1}.html`;
   }
