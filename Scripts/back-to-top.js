@@ -2,21 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToTopBtn = document.getElementById("backtotopbtn");
 
   if (backToTopBtn) {
-  
-
     const backToTopImg = backToTopBtn.querySelector("img");
-    if (backToTopImg) {
-      
 
-      // Add hover effect via JS
-      backToTopBtn.addEventListener("mouseenter", () => {
-        backToTopImg.style.transform = "scale(1.1)";
-      });
+    // Hover effect using class toggle
+    backToTopBtn.addEventListener("mouseenter", () => {
+      backToTopBtn.classList.add("hovered");
+    });
 
-      backToTopBtn.addEventListener("mouseleave", () => {
-        backToTopImg.style.transform = "scale(1)";
-      });
-    }
+    backToTopBtn.addEventListener("mouseleave", () => {
+      backToTopBtn.classList.remove("hovered");
+    });
 
     // Scroll to top on click
     backToTopBtn.addEventListener("click", function () {
@@ -29,9 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Show/hide the button on scroll
     window.addEventListener("scroll", function () {
       if (window.scrollY > 300) {
-        backToTopBtn.style.display = "block";
+        backToTopBtn.classList.add("visible");
       } else {
-        backToTopBtn.style.display = "none";
+        backToTopBtn.classList.remove("visible");
       }
     });
   } else {
