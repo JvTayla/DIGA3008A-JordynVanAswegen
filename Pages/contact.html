@@ -14,18 +14,13 @@
 
     <script src="contact.js" defer></script>
     <script src="../Scripts/back-to-top.js" defer></script>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../Styles/home-page.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://s.pageclip.co/v1/pageclip.css"
-      media="screen"
-    />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
@@ -128,9 +123,9 @@
 
         <div class="right-column">
           <form
-            class="contact-form pageclip-form"
+            class="contact-form"
             id="contact-form"
-            action="https://send.pageclip.co/XyNgcdEltI6bLU7IdivJEoSyTCkobf8M"
+            action="https://formspree.io/f/mgvykoqy"
             method="POST"
           >
             <label for="name">Name:</label>
@@ -142,9 +137,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit" class="pageclip-form__submit">
-              <span>Send Message</span>
-            </button>
+            <button type="submit">Send Message</button>
           </form>
 
           <p id="response-msg"></p>
