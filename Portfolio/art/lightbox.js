@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ✅ KEYBOARD CONTROLS
+  // KEYBOARD CONTROLS
   document.addEventListener("keydown", (e) => {
     if (lightbox.style.display === "flex") {
       switch (e.key) {

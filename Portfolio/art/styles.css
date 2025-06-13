@@ -45,13 +45,14 @@ body {
 }
 
 .lightbox-content img {
-  max-height: 47em;
+  max-height: 40em;
   height: auto;
   border-radius: 8px;
 }
 
 .lightbox-title {
   font-family: "Bangers", system-ui;
+  max-width: 75%;
   font-size: 2.5rem;
   margin-top: 1rem;
   color: #000000;
@@ -62,6 +63,7 @@ body {
 .lightbox-description {
   margin-top: 0.5rem;
   font-size: 1rem;
+  max-width: 75%;
 }
 
 .lightbox-close {
@@ -72,6 +74,7 @@ body {
   opacity: 100%;
   font-size: 2rem;
   cursor: pointer;
+  z-index: 10000;
 }
 
 .lightbox-nav {
@@ -86,19 +89,27 @@ body {
 #lightbox-prev,
 #lightbox-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-1300%);
-  background-color: #200092;
-  color: white;
+  transform: translateY(-100%);
+  align-items: center;
+  justify-content: center;
+  background: none;
   border: none;
-  padding: 0.5rem 1.25rem;
-  font-size: 1rem;
-  border-radius: 50px;
+  padding: 0;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   z-index: 10;
-  user-select: none;
-  -webkit-user-select: none;
+}
+
+#lightbox-prev img,
+#lightbox-next img {
+  width: 5em; /* or whatever size fits */
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease;
+}
+
+#lightbox-prev:hover img,
+#lightbox-next:hover img {
+  transform: scale(1.1);
 }
 
 #lightbox-prev {
@@ -107,11 +118,6 @@ body {
 
 #lightbox-next {
   right: 10px;
-}
-
-#lightbox-prev:hover,
-#lightbox-next:hover {
-  background-color: #4a19fa;
 }
 .gallery-wrapper {
   display: flex;
