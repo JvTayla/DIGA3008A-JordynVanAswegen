@@ -200,7 +200,9 @@ nav ul li a:hover {
   padding: 10px 20px;
   transition: 0.3s ease-in-out;
 }
-
+p {
+  padding-bottom: 0.5%;
+}
 nav ul li.active {
   background-color: #a81000;
   color: white;
