@@ -128,40 +128,23 @@
 
         <div class="right-column">
           <form
+            class="contact-form"
             id="contact-form"
-            class="contact-form pageclip-form"
-            action="https://send.pageclip.co/XyNgcdEltI6bLU7IdivJEoSyTCkobf8M"
+            action="https://formspree.io/f/mgvykoqy"
             method="POST"
-            data-pageclip-form="Contact Form"
           >
-            <label for="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
 
-            <label for="email">Your Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-            <label for="message">Your Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your Message"
-              required
-            ></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit" class="pageclip-form__submit">
-              <span>Send</span>
+            <button type="submit" disabled>
+              It worked with Formspree API, but if I want to use GitHub as my
+              server I need to pay and I’m not doing that &lt;3
             </button>
           </form>
 
