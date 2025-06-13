@@ -148,6 +148,7 @@ h2 {
 
 .gallery-category h3 {
   font-size: 2em;
+  font-family: "Bangers", system-ui;
   margin: 30px 0 10px;
   text-transform: uppercase;
   color: #200092;
@@ -155,12 +156,11 @@ h2 {
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-  gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 1em;
   margin-bottom: 30px;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -169,6 +169,14 @@ h2 {
 .trad-art-image-square,
 .dig-art-image {
   width: 20em;
+  object-fit: cover;
+  border-radius: 1em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-self: center;
+}
+.dig-art-image-rect {
+  width: 40em;
   object-fit: cover;
   border-radius: 1em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
