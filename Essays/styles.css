@@ -25,17 +25,24 @@ nav .dropdown-menu li.activeback
 }
 
 .container {
+   padding-top: 1em;
+   padding-bottom: 1em;
     display: flex;
     justify-content: space-between;
     width: 60%;
     height: 70%;
     max-height: 800em;
     height: 100%;
-    background-color: #a81000;
+    background-color:  #200092;
     border-radius: 25px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     
 }
+section{
+
+    padding-bottom: 1em;
+}
+
 figure {
   display: flex;
   flex-direction: column;
@@ -55,7 +62,7 @@ figure {
   font-style: italic;  
 }
 .references{
-    width: 60%;
+    width: 90%;
 }
 .references .u-url {
   color: red;
@@ -66,6 +73,7 @@ figure {
 
 .right-column {
     width: 100%;
+    padding-top: 1em;
     padding-left: 2.5em;
     padding-right: 1em;
     padding-bottom: 2em;
@@ -195,36 +203,41 @@ figure {
 
 .next-btn,
 .back-btn {
-    padding: 20px;
-    background-color: #10004b;
-    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain; /* ensures image fits the button */
+    background-position: center;
     border: none;
-    border-radius: 50%;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
+    padding: 0;
+    width: 9em;  /* adjust as needed */
+    height: 9em;
     position: fixed;
     bottom: 350px;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     z-index: 1000;
 }
 
-.next-btn:hover,
-.back-btn:hover {
-    background-color: #0056b3;
+/* Ensure image scales properly inside the button */
+.next-btn img,
+.back-btn img {
+    width: 100%;   /* Adjust to fit nicely inside the circle */
+    height: auto;
+    object-fit: contain;
 }
 
 .next-btn {
+    background-image: url('../main-image/Next.png');
     right: 50px;
 }
 
 .back-btn {
+    background-image: url('../main-image/Back.png');
     left: 50px;
+}
+
+.next-btn:hover,
+.back-btn:hover {
+    filter: brightness(0.8); /* simple hover effect */
 }
 
 /* Mobile support */
@@ -238,10 +251,10 @@ figure {
     }
 
     .next-btn {
-        right: 20px;
+        right: 10px;
     }
 
     .back-btn {
-        left: 20px;
+        left: 0px;
     }
 }
