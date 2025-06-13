@@ -1,27 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav .dropdown-menu li.active  
-{
-    background-color: #a81000;
-    color: white;
-    border: 1px solid #a81000;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
+nav .dropdown-menu li.active {
+  background-color: #a81000;
+  color: white;
+  border: 1px solid #a81000;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
-nav .dropdown-menu li.activeback
-{
-    background-color: #a81000;
-    color: white;
-    border: 1px solid #a81000;
-    border-radius: 50px;
-    padding: 1px 2px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
+nav .dropdown-menu li.activeback {
+  background-color: #a81000;
+  color: white;
+  border: 1px solid #a81000;
+  border-radius: 50px;
+  padding: 1px 2px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
 }
 .title-row {
   display: flex;
@@ -47,61 +45,61 @@ nav .dropdown-menu li.activeback
 .container {
   display: flex;
   width: 80%;
-   height: 80%;
+  height: 80%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  
+
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-flex-direction: column; 
+  flex-direction: column;
 
-width: 80%;
-margin: 0 auto;
-padding: 2rem;
-border-radius: 30px;
-box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-background-color: #a81000;
-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-color: #a81000;
+  color: rgb(255, 255, 255);
 }
-.container p{
+.container p {
   font-size: 1.5rem;
-  text-align: center;
-margin-bottom: 0.5rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
 .text-wrapper {
   max-width: 80%;
   margin: 0 auto;
 }
-.skill{
+.skill {
   justify-content: center;
   padding-top: 10px;
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 1.5rem; 
-  flex-wrap: wrap; 
+  gap: 1.5rem;
+  flex-wrap: wrap;
   color: #ffcc00;
 }
 .skill ul {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 1.5rem; 
-  flex-wrap: wrap; 
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .skill li {
-  background-color:#200092; 
+  background-color: #200092;
   color: white;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  border-radius: 50px; 
+  border-radius: 50px;
   font-weight: bold;
   text-align: center;
   font-size: 1.25rem;
 }
-.skill li.hover{
+.skill li.hover {
   transform: scale(1.5);
 }
 .portfolio-links {
@@ -120,7 +118,6 @@ margin-bottom: 0.5rem;
   margin-top: 2rem;
 }
 
-
 .portfolio-section {
   display: flex;
   flex-direction: column;
@@ -133,14 +130,13 @@ margin-bottom: 0.5rem;
   text-align: center;
   transition: transform 0.3s ease;
 }
-.portfolio-section h2{
+.portfolio-section h2 {
   color: #000000;
   font-size: 2em;
   font-weight: bold;
   padding-top: 0%;
   padding: 0%;
 }
-
 
 .portfolio-section img {
   padding-top: 20px;
@@ -155,7 +151,8 @@ margin-bottom: 0.5rem;
   transform: scale(1.05);
 }
 
-h3, h4 {
+h3,
+h4 {
   text-align: center;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -165,7 +162,6 @@ h3, h4 {
 h4 {
   font-size: 1.25rem;
 }
-
 
 .project-block {
   margin-bottom: 3rem;
@@ -182,7 +178,7 @@ h4 {
   flex: 1 1 55%;
   text-align: left;
 }
-.project-text p{
+.project-text p {
   text-align: left;
 }
 
@@ -203,7 +199,7 @@ h3.title {
   text-align: left;
   margin-top: 5px;
 }
-.container h3{
+.container h3 {
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
   font-weight: 100;
@@ -232,7 +228,7 @@ h3.title {
   font-size: 2em;
   max-width: 80%;
 }
-.project-block p{
+.project-block p {
   max-width: 80%;
 }
 
@@ -243,56 +239,55 @@ h3.title {
 
 .project-image img {
   max-width: 100%;
-  
 }
 .project-container {
   display: flex;
   width: 80%;
-   height: 80%;
+  height: 80%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  
+
   justify-content: center;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
-flex-direction: column; 
+  flex-direction: column;
 
-width: 80%;
-margin: 0 auto;
-padding: 2rem;
-border-radius: 30px;
-box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-background-color: #a81000;
-color: rgb(255, 255, 255);
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  background-color: #a81000;
+  color: rgb(255, 255, 255);
 }
-.link{
+.link {
   list-style: none;
   padding: 0;
   text-decoration: none;
   font-style: italic;
   font-weight: bold;
   display: flex;
-  gap: 1.5rem; 
-  flex-wrap: wrap; 
+  gap: 1.5rem;
+  flex-wrap: wrap;
   color: white;
 }
-ul{
+ul {
   padding-top: 1em;
-  list-style: none; ;
-}
-.container.ul{
-  font-size: 2em;
-padding-top: 1em;
-  list-style: none; 
-}
-.link hover{
-color: #200092;
-}
-.project-block.li{
   list-style: none;
 }
-.container h3{
+.container.ul {
+  font-size: 2em;
+  padding-top: 1em;
+  list-style: none;
+}
+.link hover {
+  color: #200092;
+}
+.project-block.li {
+  list-style: none;
+}
+.container h3 {
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
   font-weight: 100;
@@ -301,14 +296,14 @@ color: #200092;
   text-align: center;
   margin-top: 5px;
 }
-.project-container h3{
+.project-container h3 {
   text-align: left;
   text-transform: uppercase;
   font-family: "Bangers", system-ui;
   font-weight: 100;
   font-size: 3em;
   color: rgb(255, 255, 255);
-  
+
   margin-top: 5px;
 }
 @media (max-width: 600px) {

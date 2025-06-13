@@ -95,6 +95,9 @@ nav .dropdown-menu li.activeback {
   max-width: 80%;
   margin: 0 auto;
 }
+.text-wrapper p {
+  text-align: left;
+}
 .skill {
   justify-content: center;
   padding-top: 10px;
