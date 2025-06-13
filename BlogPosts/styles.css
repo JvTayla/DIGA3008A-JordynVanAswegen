@@ -38,17 +38,6 @@ nav .dropdown-menu li.activeback {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-.blog-image {
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.blog-image img {
-  max-width: 100%;
-  height: auto;
-  display: inline-block;
-}
 
 /* Left column */
 .left-column {
