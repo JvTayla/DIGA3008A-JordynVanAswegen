@@ -128,42 +128,27 @@
 
         <div class="right-column">
           <form
-            id="contact-form"
-            class="contact-form"
-            action="https://send.pageclip.co/XyNgcdEltI6bLU7IdivJEoSyTCkobf8M"
+            class="pageclip-form"
+            action="https://cors-anywhere.herokuapp.com/https://send.pageclip.co/XyNgcdEltI6bLU7IdivJEoSyTCkobf8M"
             method="POST"
           >
-            <label for="name">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your Name"
-              required
-            />
-
-            <label for="email">Your Email</label>
+            <input type="text" name="name" placeholder="Your Name" required />
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Your Email"
               required
             />
-
-            <label for="message">Your Message</label>
             <textarea
-              id="message"
               name="message"
               placeholder="Your Message"
               required
             ></textarea>
 
-            <button type="submit">
+            <button type="submit" class="pageclip-form__submit">
               <span>Send</span>
             </button>
           </form>
-
           <p id="response-msg"></p>
         </div>
       </div>
