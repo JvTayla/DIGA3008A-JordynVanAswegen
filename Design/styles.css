@@ -41,6 +41,14 @@ ul {
   margin-bottom: 20px;
 }
 
+.wflink {
+  list-style: none;
+}
+
+.wflink a {
+  list-style: none;
+  color: white;
+}
 .wireframe-section h2 {
   font-size: 3em;
   font-family: "Bangers", system-ui;
