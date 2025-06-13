@@ -14,9 +14,14 @@
 
     <script src="contact.js" defer></script>
     <script src="../Scripts/back-to-top.js" defer></script>
-
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../Styles/home-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -123,23 +128,27 @@
 
         <div class="right-column">
           <form
-            class="contact-form"
-            id="contact-form"
-            action="https://formspree.io/f/mgvykoqy"
+            class="pageclip-form"
+            action="https://cors-anywhere.herokuapp.com/https://send.pageclip.co/XyNgcdEltI6bLU7IdivJEoSyTCkobf8M"
             method="POST"
           >
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Send Message</button>
+            <button type="submit" class="pageclip-form__submit">
+              <span>Send</span>
+            </button>
           </form>
-
           <p id="response-msg"></p>
         </div>
       </div>
