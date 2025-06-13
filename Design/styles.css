@@ -27,25 +27,7 @@ nav .dropdown-menu li.activeback {
 ul {
   color: black;
 }
-.blog-portfolio-links {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.blog-section {
-  flex: 1 1 30%;
-  max-width: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fffb00;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-.blog-section img {
-  width: 50em;
-}
+
 .wireframe-wrapper {
   display: flex;
   flex-direction: column;
