@@ -180,14 +180,14 @@
 }
 
 .portfolio-section img {
-  padding-top: 20px;
-  text-align: center;
-  max-width: 400px;
+  margin-top: 2em;
+  max-width: 100%;
+  width: 100%;
+  max-width: 40em; /* limit width on large screens */
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
-
 .portfolio-section:hover {
   transform: scale(1.05);
 }
