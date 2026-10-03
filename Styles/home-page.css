@@ -69,7 +69,9 @@ section {
 
 .star {
   opacity: 0;
-  animation: floatRotate 8s linear forwards, rotate 8s linear infinite;
+  animation:
+    floatRotate 8s linear forwards,
+    rotate 8s linear infinite;
 }
 
 @keyframes floatRotate {
@@ -109,6 +111,31 @@ section {
   height: 4px;
   width: 100%;
   border-radius: 2px;
+}
+.hero-gif {
+  width: 200%;
+  max-width: 850px;
+  margin: 0 auto 2px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #1a1a1a;
+}
+.hero .subtitle {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #555;
+  letter-spacing: 0.5px;
 }
 .hello {
   text-transform: uppercase;
@@ -158,7 +185,10 @@ section {
   margin: 0;
   text-align: left;
   letter-spacing: 3px;
-  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
     -1px 1px 0 #000;
 }
 nav ul {
@@ -408,7 +438,9 @@ footer {
   font-weight: bold;
   letter-spacing: 2px;
   margin: 0;
-  text-shadow: 1px 1px 0 black, -1px -1px 0 black;
+  text-shadow:
+    1px 1px 0 black,
+    -1px -1px 0 black;
 }
 
 .footer-links {
@@ -634,7 +666,10 @@ footer {
     margin: 0;
     text-align: left;
     letter-spacing: 3px;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
       -1px 1px 0 #000;
   }
 
